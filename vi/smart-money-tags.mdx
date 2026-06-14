@@ -1,6 +1,6 @@
 ---
-title: "Nhãn hồ sơ ví"
-description: "Giải thích các nhãn hệ thống trên thẻ ví và tiêu chí xác định."
+title: "Nhãn chân dung ví"
+description: "Giải thích các nhãn hệ thống trên thẻ ví và tiêu chí đánh giá của chúng."
 mode: "wide"
 ---
 
@@ -8,59 +8,104 @@ export const Icon = ({ src, alt }) => (
   <img src={src} alt={alt} style={{ width: 18, height: 18, display: 'inline-block', verticalAlign: 'middle', marginRight: 6 }} />
 );
 
-## Nhãn hồ sơ ví
+## Nhãn chân dung ví
 
-Bên cạnh ảnh đại diện trên thẻ ví sẽ hiển thị một nhóm nhãn hệ thống, dùng để tóm tắt nhanh đặc điểm giao dịch của ví đó. Đây không phải là nhãn yêu thích do người dùng tự thêm, mà là hồ sơ được tạo dựa trên dữ liệu của ví.
+Bên cạnh ảnh đại diện trên thẻ ví sẽ hiển thị một nhóm nhãn hệ thống, dùng để tóm tắt nhanh đặc điểm giao dịch của ví đó. Đây không phải là các nhãn yêu thích do người dùng tự thêm vào, mà là chân dung được tạo dựa trên dữ liệu của ví.
 
-Các nhãn thường gặp có thể được hiểu theo bốn nhóm:
+Các nhãn phổ biến có thể hiểu theo bốn nhóm có thể hiểu theo bốn nhóm:
 
 ### Quy mô tài khoản
 
-Dùng để phân loại quy mô ví theo kích thước vị thế hiện tại.
+Dùng để phân biệt quy mô ví theo quy mô vị thế hiện tại.
 
-| Nhãn | Ý nghĩa | Tiêu chí |
+| Nhãn | Ý nghĩa | Tiêu chí đánh giá |
 | --- | --- | --- |
-| <Icon src="/assets/smart-money/whale.svg" alt="Cá voi" />Cá voi | Ví có quy mô vị thế hiện tại rất lớn. | Vị thế lớn hơn 1.000.000 USDC |
-| <Icon src="/assets/smart-money/shark.svg" alt="Cá mập" />Cá mập | Ví có quy mô vị thế hiện tại lớn. | Vị thế từ 100.000 đến 1.000.000 USDC |
-| <Icon src="/assets/smart-money/dolphin.svg" alt="Cá heo" />Cá heo | Ví có quy mô vị thế hiện tại ở mức trung bình. | Vị thế từ 50.000 đến 100.000 USDC |
-| <Icon src="/assets/smart-money/fish.svg" alt="Cá nhỏ" />Cá nhỏ | Ví có quy mô vị thế hiện tại nhỏ. | Vị thế từ 10.000 đến 50.000 USDC |
+| <Icon src="/assets/smart-money/whale.svg" alt="Cá voi" />Cá voi | Ví có quy mô vị thế hiện tại rất lớn. | Vị thế lớn hơn 1 triệu USDC |
+| <Icon src="/assets/smart-money/shark.svg" alt="Cá mập" />Cá mập | Ví có quy mô vị thế hiện tại tương đối lớn. | Vị thế từ 100 nghìn đến 1 triệu USDC |
+| <Icon src="/assets/smart-money/dolphin.svg" alt="Cá heo" />Cá heo | Ví có quy mô vị thế hiện tại trung bình. | Vị thế từ 50 nghìn đến 100 nghìn USDC |
+| <Icon src="/assets/smart-money/fish.svg" alt="Cá nhỏ" />Cá nhỏ | Ví có quy mô vị thế hiện tại tương đối nhỏ. | Vị thế từ 10 nghìn đến 50 nghìn USDC |
 
-### Sở thích tài sản
+### Sở thích loại coin
 
-Dùng để xác định ví chủ yếu giao dịch loại tài sản nào.
+Dùng để đánh giá ví chủ yếu giao dịch loại tài sản nào.
 
-| Nhãn | Ý nghĩa |
+| Nhãn | Ý nghĩa đánh giá |
 | --- | --- |
-| <Icon src="/assets/smart-money/majors.svg" alt="Coin chủ chốt" />Coin chủ chốt | Giao dịch nhiều hơn các tài sản chủ chốt như BTC, ETH. |
-| <Icon src="/assets/smart-money/alts.svg" alt="Altcoin" />Altcoin | Giao dịch nhiều hơn các tài sản không chủ chốt có biến động cao. |
-| <Icon src="/assets/smart-money/tradfi.svg" alt="TradFi" />TradFi | Giao dịch nhiều hơn các tài sản liên quan đến tài chính truyền thống. |
-| <Icon src="/assets/smart-money/mixed.svg" alt="Tổng hợp" />Tổng hợp | Giao dịch nhiều loại tài sản mà không có sở thích đơn lẻ rõ rệt. |
+| <Icon src="/assets/smart-money/majors.svg" alt="Coin chính" />Coin chính | Thường giao dịch các tài sản chính như BTC, ETH. |
+| <Icon src="/assets/smart-money/alts.svg" alt="Altcoin" />Altcoin | Thường giao dịch các tài sản không phải coin chính có biến động cao. |
+| <Icon src="/assets/smart-money/tradfi.svg" alt="TradFi" />TradFi | Thường giao dịch các tài sản liên quan đến tài chính truyền thống. |
+| <Icon src="/assets/smart-money/mixed.svg" alt="Hỗn hợp" />Hỗn hợp | Giao dịch nhiều loại, không có sở thích đơn lẻ rõ ràng. |
 
-### Sở thích chiều hướng
+### Sở thích hướng giao dịch
 
-Dùng để xác định ví thường mở vị thế Long, Short, hay tương đối cân bằng giữa Long và Short.
+Dùng để đánh giá ví thường thiên về long, short, hay cân bằng giữa long và short.
 
-| Nhãn | Ý nghĩa |
+| Nhãn | Ý nghĩa đánh giá |
 | --- | --- |
-| <Icon src="/assets/smart-money/long-biased.svg" alt="Thiên Long" />Thiên Long | Thường giữ vị thế Long. |
-| <Icon src="/assets/smart-money/short-biased.svg" alt="Thiên Short" />Thiên Short | Thường giữ vị thế Short. |
-| <Icon src="/assets/smart-money/hybrid.svg" alt="Cân bằng" />Cân bằng | Phân bổ Long và Short tương đối cân bằng. |
+| <Icon src="/assets/smart-money/long-biased.svg" alt="Thiên về long" />Thiên về long | Thường giữ vị thế mua (long). |
+| <Icon src="/assets/smart-money/short-biased.svg" alt="Thiên về short" />Thiên về short | Thường giữ vị thế bán (short). |
+| <Icon src="/assets/smart-money/hybrid.svg" alt="Cân bằng" />Cân bằng | Phân bố long/short tương đối cân bằng. |
 
 ### Chu kỳ giao dịch và dấu hiệu hiệu suất
 
-Dùng để xác định nhịp độ giao dịch và xem hiệu suất gần đây có đặc điểm nổi bật hay không.
+Dùng để đánh giá nhịp giao dịch và xem hiệu suất gần đây có đặc điểm nổi bật nào không.
 
-| Nhãn | Ý nghĩa | Tiêu chí |
+### Quy mô tài khoản
+
+Dùng để phân biệt quy mô ví theo quy mô vị thế hiện tại.
+
+| Nhãn | Ý nghĩa đánh giá |
+| --- | --- |
+| Cá voi | Ví có quy mô vị thế hiện tại rất lớn. |
+| Cá mập | Ví có quy mô vị thế hiện tại tương đối lớn. |
+| Cá heo | Ví có quy mô vị thế hiện tại trung bình. |
+| Cá nhỏ | Ví có quy mô vị thế hiện tại tương đối nhỏ. |
+
+### Sở thích loại coin
+
+Dùng để đánh giá ví chủ yếu giao dịch loại tài sản nào.
+
+| Nhãn | Ý nghĩa đánh giá |
+| --- | --- |
+| Coin chính | Thường giao dịch các tài sản chính như BTC, ETH. |
+| Altcoin | Thường giao dịch các tài sản không phải coin chính có biến động cao. |
+| TradFi | Thường giao dịch các tài sản liên quan đến tài chính truyền thống. |
+| Hỗn hợp | Giao dịch nhiều loại, không có sở thích đơn lẻ rõ ràng. |
+
+### Sở thích hướng giao dịch
+
+Dùng để đánh giá ví thường thiên về long, short, hay cân bằng giữa long và short.
+
+| Nhãn | Ý nghĩa đánh giá |
+| --- | --- |
+| Thiên về long | Thường giữ vị thế mua (long). |
+| Thiên về short | Thường giữ vị thế bán (short). |
+| Cân bằng | Phân bố long/short tương đối cân bằng. |
+
+### Chu kỳ giao dịch và dấu hiệu hiệu suất
+
+Dùng để đánh giá nhịp giao dịch và xem hiệu suất gần đây có đặc điểm nổi bật nào không.
+
+| Nhãn | Ý nghĩa đánh giáÝ nghĩa đánh giá |
+| --- | --- |
+| ScalpingScalping | Thiên về giao dịch tần suất cao.Thiên về giao dịch tần suất cao. |
+| Ngắn hạnNgắn hạn | Thiên về giữ vị thế chu kỳ ngắn.Thiên về giữ vị thế chu kỳ ngắn. |
+| Trung-dài hạnTrung-dài hạn | Thiên về giữ vị thế chu kỳ dài hơn.Thiên về giữ vị thế chu kỳ dài hơn. |
+| Thợ săn tỷ lệ thắngThợ săn tỷ lệ thắng | Tỷ lệ thắng nổi bật.Tỷ lệ thắng nổi bật. |
+| Tăng trưởng ổn địnhTăng trưởng ổn định | Hiệu suất ổn định trên chu kỳ dài.Hiệu suất ổn định trên chu kỳ dài. |
+| Cỗ máy lợi nhuậnCỗ máy lợi nhuận | Mức độ hoạt động giao dịch và hiệu suất lợi nhuận khá nổi bật.Mức độ hoạt động giao dịch và hiệu suất lợi nhuận khá nổi bật. |
+
+| Nhãn | Ý nghĩa | Tiêu chí đánh giá |
 | --- | --- | --- |
-| <Icon src="/assets/smart-money/trend.svg" alt="Siêu ngắn hạn" />Siêu ngắn hạn | Thiên về giao dịch tần suất ngắn. | Xác định theo chu kỳ nắm giữ và nhịp giao dịch. |
-| <Icon src="/assets/smart-money/short-term.svg" alt="Ngắn hạn" />Ngắn hạn | Thiên về giữ vị thế trong chu kỳ ngắn. | Xác định theo chu kỳ nắm giữ và nhịp giao dịch. |
-| <Icon src="/assets/smart-money/high-freq.svg" alt="Trung và dài hạn" />Trung và dài hạn | Thiên về giữ vị thế trong chu kỳ dài hơn. | Xác định theo chu kỳ nắm giữ và nhịp giao dịch. |
-| <Icon src="/assets/smart-money/on-fire.svg" alt="Thợ săn tỷ lệ thắng" />Thợ săn tỷ lệ thắng | Tỷ lệ thắng nổi bật. | Tỷ lệ thắng lớn hơn 80% và số lệnh mở trong 30 ngày lớn hơn 60 |
-| <Icon src="/assets/smart-money/shield.svg" alt="Tăng trưởng ổn định" />Tăng trưởng ổn định | Hiệu suất ổn định hơn trong chu kỳ dài. | Có lợi nhuận ổn định trên nửa năm và số lệnh mở trong 30 ngày lớn hơn 30 |
-| <Icon src="/assets/smart-money/lightning.svg" alt="Cỗ máy kiếm tiền" />Cỗ máy kiếm tiền | Mức độ hoạt động và hiệu suất lợi nhuận nổi bật. | Tỷ lệ thắng lớn hơn 60% và số lệnh mở trong 30 ngày lớn hơn 300 |
+| <Icon src="/assets/smart-money/trend.svg" alt="Scalping" />Scalping | Thiên về giao dịch tần suất cao. | Đánh giá theo chu kỳ giữ vị thế và nhịp giao dịch. |
+| <Icon src="/assets/smart-money/short-term.svg" alt="Ngắn hạn" />Ngắn hạn | Thiên về giữ vị thế chu kỳ ngắn. | Đánh giá theo chu kỳ giữ vị thế và nhịp giao dịch. |
+| <Icon src="/assets/smart-money/high-freq.svg" alt="Trung-dài hạn" />Trung-dài hạn | Thiên về giữ vị thế chu kỳ dài hơn. | Đánh giá theo chu kỳ giữ vị thế và nhịp giao dịch. |
+| <Icon src="/assets/smart-money/on-fire.svg" alt="Thợ săn tỷ lệ thắng" />Thợ săn tỷ lệ thắng | Tỷ lệ thắng nổi bật. | Tỷ lệ thắng lớn hơn 80%, và số lệnh mở trong 30 ngày lớn hơn 60 |
+| <Icon src="/assets/smart-money/shield.svg" alt="Tăng trưởng ổn định" />Tăng trưởng ổn định | Hiệu suất ổn định trên chu kỳ dài. | Có lợi nhuận ổn định trên nửa năm, và số lệnh mở trong 30 ngày lớn hơn 30 |
+| <Icon src="/assets/smart-money/lightning.svg" alt="Cỗ máy lợi nhuận" />Cỗ máy lợi nhuận | Mức độ hoạt động giao dịch và hiệu suất lợi nhuận khá nổi bật. | Tỷ lệ thắng lớn hơn 60%, và số lệnh mở trong 30 ngày lớn hơn 300 |
 
-Ví dụ trong ảnh chụp màn hình, **Cân bằng / Thiên Long / Ngắn hạn** cho thấy ví này có phân bổ Long và Short tương đối cân bằng trong hồ sơ, gần đây thiên về Long hơn và nhịp giao dịch nghiêng về ngắn hạn. Bạn có thể dùng các nhãn này trước để đánh giá xem ví có phù hợp với sở thích copy trading của mình không, rồi mới vào trang chi tiết để xem vị thế và lịch sử giao dịch.
+Ví dụ trong ảnh chụp là **Cân bằng / Thiên về long / Ngắn hạn**, nghĩa là ví này có phân bố long/short tương đối cân bằng trong chân dung, gần đây thiên về long hơn, và nhịp giao dịch thiên về ngắn hạn. Bạn có thể dùng các nhãn này để đánh giá sơ bộ xem ví có phù hợp với sở thích copy trade của mình không, rồi mới vào trang chi tiết để xem vị thế và lịch sử giao dịch.
 
-Quy mô tài khoản chủ yếu dùng để đánh giá quy mô của ví. Quy mô càng lớn thì thường càng phản ánh đúng hành vi của dòng vốn thực; với những ví có quy mô nhỏ, tỷ suất lợi nhuận có thể dễ bị khuếch đại bởi một vài giao dịch.
+Quy mô tài khoản chủ yếu dùng để đánh giá quy mô của ví. Quy mô càng lớn thì thường càng phản ánh được hành vi tiền thật; những ví có quy mô nhỏ hơn có thể có tỷ suất lợi nhuận dễ bị khuếch đại bởi một vài giao dịch.
 
-Dấu hiệu hiệu suất chỉ cho thấy ví đáp ứng các điều kiện dữ liệu tương ứng, không có nghĩa là sau này sẽ tiếp tục có lợi nhuận. Khi quyết định có copy hay không, bạn vẫn cần kết hợp xem xét vị thế hiện tại, mức sụt giảm, đòn bẩy và các loại tài sản đang giao dịch.
+Dấu hiệu hiệu suất chỉ cho biết ví đó đáp ứng các điều kiện dữ liệu tương ứng, không có nghĩa là sau này chắc chắn sẽ tiếp tục có lợi nhuận. Khi quyết định có nên copy hay không, bạn vẫn cần xem xét đồng thời vị thế hiện tại, drawdown, đòn bẩy và loại coin giao dịch.

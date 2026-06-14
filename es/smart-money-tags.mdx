@@ -1,6 +1,6 @@
 ---
-title: "Etiquetas de perfil de billetera"
-description: "Explicación de las etiquetas del sistema en la tarjeta de la billetera y sus criterios."
+title: "Etiquetas de perfil de wallet"
+description: "Descripción de las etiquetas del sistema que aparecen en la tarjeta de wallet y sus criterios de evaluación."
 mode: "wide"
 ---
 
@@ -8,59 +8,104 @@ export const Icon = ({ src, alt }) => (
   <img src={src} alt={alt} style={{ width: 18, height: 18, display: 'inline-block', verticalAlign: 'middle', marginRight: 6 }} />
 );
 
-## Etiquetas de perfil de billetera
+## Etiquetas de perfil de wallet
 
-Junto al avatar de la tarjeta de la billetera se muestra un grupo de etiquetas del sistema que resumen rápidamente las características de operación de esa billetera. No son las etiquetas de favoritos que agregas manualmente, sino un perfil generado a partir de los datos de la billetera.
+Junto al avatar de la tarjeta de wallet se muestra un conjunto de etiquetas del sistema que resumen rápidamente las características de trading de esa wallet. No son etiquetas de favoritos añadidas manualmente por el usuario, sino un perfil generado a partir de los datos de la wallet.
 
-Las etiquetas comunes se pueden entender en cuatro categorías:
+Las etiquetas habituales se pueden entender en cuatro grupos se pueden entender en cuatro grupos:
 
 ### Tamaño de cuenta
 
-Se usa para clasificar el volumen de la billetera según el tamaño de la posición actual.
+Sirve para diferenciar el tamaño de las wallets según su posición actual.
 
 | Etiqueta | Significado | Criterio |
 | --- | --- | --- |
-| <Icon src="/assets/smart-money/whale.svg" alt="Ballena" />Ballena | Billetera con una posición actual muy grande. | Posición mayor a 1.000.000 USDC |
-| <Icon src="/assets/smart-money/shark.svg" alt="Tiburón" />Tiburón | Billetera con una posición actual grande. | Posición entre 100.000 y 1.000.000 USDC |
-| <Icon src="/assets/smart-money/dolphin.svg" alt="Delfín" />Delfín | Billetera con una posición actual mediana. | Posición entre 50.000 y 100.000 USDC |
-| <Icon src="/assets/smart-money/fish.svg" alt="Pez pequeño" />Pez pequeño | Billetera con una posición actual pequeña. | Posición entre 10.000 y 50.000 USDC |
+| <Icon src="/assets/smart-money/whale.svg" alt="Ballena" />Ballena | Wallet con una posición actual muy grande. | Posición mayor a 1 millón de USDC |
+| <Icon src="/assets/smart-money/shark.svg" alt="Tiburón" />Tiburón | Wallet con una posición actual relativamente grande. | Posición entre 100 mil y 1 millón de USDC |
+| <Icon src="/assets/smart-money/dolphin.svg" alt="Delfín" />Delfín | Wallet con una posición actual mediana. | Posición entre 50 mil y 100 mil USDC |
+| <Icon src="/assets/smart-money/fish.svg" alt="Pez" />Pez | Wallet con una posición actual relativamente pequeña. | Posición entre 10 mil y 50 mil USDC |
 
 ### Preferencia de activos
 
-Se usa para identificar qué tipo de activos opera principalmente la billetera.
+Sirve para identificar qué tipo de activos opera principalmente la wallet.
 
 | Etiqueta | Significado |
 | --- | --- |
-| <Icon src="/assets/smart-money/majors.svg" alt="Majors" />Majors | Opera con más frecuencia activos principales como BTC y ETH. |
-| <Icon src="/assets/smart-money/alts.svg" alt="Altcoins" />Altcoins | Opera con más frecuencia activos no principales y de alta volatilidad. |
-| <Icon src="/assets/smart-money/tradfi.svg" alt="TradFi" />TradFi | Opera con más frecuencia activos relacionados con finanzas tradicionales. |
+| <Icon src="/assets/smart-money/majors.svg" alt="Principales" />Principales | Opera con más frecuencia activos principales como BTC y ETH. |
+| <Icon src="/assets/smart-money/alts.svg" alt="Alts" />Alts | Opera con más frecuencia activos no principales con mayor volatilidad. |
+| <Icon src="/assets/smart-money/tradfi.svg" alt="TradFi" />TradFi | Opera con más frecuencia activos relacionados con las finanzas tradicionales. |
 | <Icon src="/assets/smart-money/mixed.svg" alt="Mixto" />Mixto | Opera varios tipos sin una preferencia única clara. |
 
 ### Preferencia de dirección
 
-Se usa para determinar si la billetera tiende más a posiciones largas, cortas o si está relativamente equilibrada.
+Sirve para identificar si la wallet tiende más a operar en largo, en corto, o de forma relativamente equilibrada.
 
 | Etiqueta | Significado |
 | --- | --- |
 | <Icon src="/assets/smart-money/long-biased.svg" alt="Sesgo largo" />Sesgo largo | Mantiene con más frecuencia posiciones largas. |
 | <Icon src="/assets/smart-money/short-biased.svg" alt="Sesgo corto" />Sesgo corto | Mantiene con más frecuencia posiciones cortas. |
-| <Icon src="/assets/smart-money/hybrid.svg" alt="Equilibrada" />Equilibrada | Distribución entre largos y cortos relativamente equilibrada. |
+| <Icon src="/assets/smart-money/hybrid.svg" alt="Equilibrado" />Equilibrado | Distribución relativamente equilibrada entre largos y cortos. |
 
-### Horizonte de trading y marcas de desempeño
+### Ciclo de trading y marcadores de desempeño
 
-Se usa para identificar el ritmo de trading y si hay características destacadas en el desempeño reciente.
+Sirve para identificar el ritmo de trading y si el desempeño reciente presenta características destacadas.
+
+### Tamaño de cuenta
+
+Sirve para diferenciar el tamaño de las wallets según su posición actual.
+
+| Etiqueta | Significado |
+| --- | --- |
+| Ballena | Wallet con una posición actual muy grande. |
+| Tiburón | Wallet con una posición actual relativamente grande. |
+| Delfín | Wallet con una posición actual mediana. |
+| Pez | Wallet con una posición actual relativamente pequeña. |
+
+### Preferencia de activos
+
+Sirve para identificar qué tipo de activos opera principalmente la wallet.
+
+| Etiqueta | Significado |
+| --- | --- |
+| Principales | Opera con más frecuencia activos principales como BTC y ETH. |
+| Alts | Opera con más frecuencia activos no principales con mayor volatilidad. |
+| TradFi | Opera con más frecuencia activos relacionados con las finanzas tradicionales. |
+| Mixto | Opera varios tipos sin una preferencia única clara. |
+
+### Preferencia de dirección
+
+Sirve para identificar si la wallet tiende más a operar en largo, en corto, o de forma relativamente equilibrada.
+
+| Etiqueta | Significado |
+| --- | --- |
+| Sesgo largo | Mantiene con más frecuencia posiciones largas. |
+| Sesgo corto | Mantiene con más frecuencia posiciones cortas. |
+| Equilibrado | Distribución relativamente equilibrada entre largos y cortos. |
+
+### Ciclo de trading y marcadores de desempeño
+
+Sirve para identificar el ritmo de trading y si el desempeño reciente presenta características destacadas.
+
+| Etiqueta | Significado Significado |
+| --- | --- |
+| Scalping Scalping | Más orientado a trading de alta frecuencia. Más orientado a trading de alta frecuencia. |
+| Corto plazo Corto plazo | Más orientado a posiciones de ciclo corto. Más orientado a posiciones de ciclo corto. |
+| Mediano plazo Mediano plazo | Más orientado a posiciones de ciclo más largo. Más orientado a posiciones de ciclo más largo. |
+| Cazador de win-rate Cazador de win-rate | Tasa de victoria destacada. Tasa de victoria destacada. |
+| Compositor estable Compositor estable | Desempeño más estable en ciclos largos. Desempeño más estable en ciclos largos. |
+| Máquina de beneficios Máquina de beneficios | Actividad de trading y rendimiento destacados. Actividad de trading y rendimiento destacados. |
 
 | Etiqueta | Significado | Criterio |
 | --- | --- | --- |
-| <Icon src="/assets/smart-money/trend.svg" alt="Ultra corto plazo" />Ultra corto plazo | Tiende a operar con alta frecuencia. | Se determina por el período de tenencia y el ritmo de trading. |
-| <Icon src="/assets/smart-money/short-term.svg" alt="Corto plazo" />Corto plazo | Tiende a mantener posiciones por períodos cortos. | Se determina por el período de tenencia y el ritmo de trading. |
-| <Icon src="/assets/smart-money/high-freq.svg" alt="Mediano y largo plazo" />Mediano y largo plazo | Tiende a mantener posiciones por períodos más largos. | Se determina por el período de tenencia y el ritmo de trading. |
-| <Icon src="/assets/smart-money/on-fire.svg" alt="Rey del win rate" />Rey del win rate | Desempeño destacado en porcentaje de aciertos. | Win rate mayor al 80% y más de 60 operaciones abiertas en 30 días |
-| <Icon src="/assets/smart-money/shield.svg" alt="Crecimiento estable" />Crecimiento estable | Desempeño más estable en plazos largos. | Ganancias estables durante más de medio año y más de 30 operaciones abiertas en 30 días |
-| <Icon src="/assets/smart-money/lightning.svg" alt="Máquina de ganancias" />Máquina de ganancias | Actividad de trading y rentabilidad destacadas. | Win rate mayor al 60% y más de 300 operaciones abiertas en 30 días |
+| <Icon src="/assets/smart-money/trend.svg" alt="Scalping" />Scalping | Más orientado a trading de alta frecuencia. | Se evalúa según el ciclo de las posiciones y el ritmo de trading. |
+| <Icon src="/assets/smart-money/short-term.svg" alt="Corto plazo" />Corto plazo | Más orientado a posiciones de ciclo corto. | Se evalúa según el ciclo de las posiciones y el ritmo de trading. |
+| <Icon src="/assets/smart-money/high-freq.svg" alt="Mediano plazo" />Mediano plazo | Más orientado a posiciones de ciclo más largo. | Se evalúa según el ciclo de las posiciones y el ritmo de trading. |
+| <Icon src="/assets/smart-money/on-fire.svg" alt="Cazador de win-rate" />Cazador de win-rate | Tasa de victoria destacada. | Win rate mayor al 80% y más de 60 operaciones abiertas en 30 días |
+| <Icon src="/assets/smart-money/shield.svg" alt="Compositor estable" />Compositor estable | Desempeño más estable en ciclos largos. | Beneficio estable durante más de medio año y más de 30 operaciones abiertas en 30 días |
+| <Icon src="/assets/smart-money/lightning.svg" alt="Máquina de beneficios" />Máquina de beneficios | Actividad de trading y rendimiento destacados. | Win rate mayor al 60% y más de 300 operaciones abiertas en 30 días |
 
-Por ejemplo, el **Equilibrada / Sesgo largo / Corto plazo** que aparece en la captura indica que la distribución de la billetera entre largos y cortos está relativamente equilibrada, recientemente se inclina más hacia largos y su ritmo de trading es de corto plazo. Puedes usar primero estas etiquetas para juzgar si encaja con tus preferencias de copy trading y luego entrar al detalle para ver posiciones e historial.
+Por ejemplo, en la captura de pantalla **Equilibrado / Sesgo largo / Corto plazo** indica que esta wallet, en su perfil, presenta una distribución relativamente equilibrada entre largos y cortos, con un sesgo direccional reciente hacia largos y un ritmo de trading de corto plazo. Puedes usar estas etiquetas primero para juzgar si encaja con tus preferencias de copy trading, y luego entrar a la página de detalles para revisar las posiciones y el historial de operaciones.
 
-El tamaño de cuenta sirve principalmente para juzgar el volumen de la billetera. A mayor volumen, mejor suele representar un comportamiento real de capital; en billeteras pequeñas, el porcentaje de rentabilidad puede amplificarse fácilmente con unas pocas operaciones.
+El tamaño de cuenta se usa principalmente para juzgar el volumen de la wallet. Cuanto mayor sea el volumen, más representativo suele ser del comportamiento real del capital; en wallets más pequeñas, la tasa de retorno puede verse amplificada con mayor facilidad por unas pocas operaciones.
 
-Las marcas de desempeño solo indican que la billetera cumple las condiciones de datos correspondientes; no garantizan que siga siendo rentable. Para decidir si copiarla, también revisa las posiciones actuales, la caída máxima, el apalancamiento y los activos operados.
+Los marcadores de desempeño solo indican que la wallet cumple las condiciones de datos correspondientes, no garantizan que vaya a seguir siendo rentable. Para decidir si la sigues, también debes considerar conjuntamente la posición actual, el drawdown, el apalancamiento y los activos negociados.

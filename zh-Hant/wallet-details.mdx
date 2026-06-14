@@ -1,8 +1,12 @@
 ---
 title: "錢包詳情分析"
-description: "查看錢包持倉、歷史交易與風險表現。"
+description: "查看錢包持倉、歷史交易和風險表現。"
 mode: "wide"
 ---
+
+export const Icon = ({ src, alt }) => (
+  <img src={src} alt={alt} style={{ width: 18, height: 18, display: 'inline-block', verticalAlign: 'middle', marginRight: 6 }} />
+);
 
 錢包詳情頁是判斷一個錢包是否值得繼續觀察的地方。聰明錢幫你找到候選錢包，詳情頁則幫你判斷它到底是不是適合跟隨的錢包。
 
@@ -16,11 +20,11 @@ mode: "wide"
 - 平倉是否有紀律？
 - 虧損後是否會失控加倉？
 
-如果收益來源不清晰，可以繼續查看歷史交易、目前持倉與風險指標，再決定下一步操作。
+如果收益來源不清晰，可以繼續查看歷史交易、目前持倉和風險指標，再決定下一步操作。
 
 ## 看錢包畫像
 
-詳情頁也會顯示錢包畫像標籤，幫助你快速理解這個錢包的交易風格。
+詳情頁也會展示錢包畫像標籤，幫助你快速理解這個錢包的交易風格。
 
 - **帳戶規模**：區分錢包目前持倉體量，例如鯨魚、鯊魚、海豚、小魚。
 - **幣種偏好**：判斷它更常交易主流幣、山寨幣、TradFi 標的，還是多個類型都有。
@@ -30,22 +34,25 @@ mode: "wide"
 
 帳戶規模標籤的判斷標準：
 
-| 圖示 | 標籤 | 判斷標準 |
-| --- | --- | --- |
-| <img src="/assets/smart-money/whale.svg" alt="鯨魚" width="18" /> | 鯨魚 | 持倉大於 100 萬 USDC |
-| <img src="/assets/smart-money/shark.svg" alt="鯊魚" width="18" /> | 鯊魚 | 持倉 10 萬到 100 萬 USDC |
-| <img src="/assets/smart-money/dolphin.svg" alt="海豚" width="18" /> | 海豚 | 持倉 5 萬到 10 萬 USDC |
-| <img src="/assets/smart-money/fish.svg" alt="小魚" width="18" /> | 小魚 | 持倉 1 萬到 5 萬 USDC |
+| 標籤 | 判斷標準 |
+| --- | --- |
+| 標籤 | 判斷標準 |
+| 鯨魚 <Icon src="/assets/smart-money/whale.svg" alt="鯨魚" />鯨魚 | 持倉大於 100 萬 USDC |
+| 鯊魚 <Icon src="/assets/smart-money/shark.svg" alt="鯊魚" />鯊魚 | 持倉 10 萬到 100 萬 USDC |
+| 海豚 <Icon src="/assets/smart-money/dolphin.svg" alt="海豚" />海豚 | 持倉 5 萬到 10 萬 USDC |
+| 小魚 <Icon src="/assets/smart-money/fish.svg" alt="小魚" />小魚 | 持倉 1 萬到 5 萬 USDC |
 
 表現標記的判斷標準：
 
-| 圖示 | 標籤 | 判斷標準 |
-| --- | --- | --- |
-| <img src="/assets/smart-money/on-fire.svg" alt="勝率狂人" width="18" /> | 勝率狂人 | 勝率大於 80%，且 30 日開單數大於 60 |
-| <img src="/assets/smart-money/shield.svg" alt="穩定增值" width="18" /> | 穩定增值 | 半年以上穩定盈利，且 30 日開單數大於 30 |
-| <img src="/assets/smart-money/lightning.svg" alt="賺錢機器" width="18" /> | 賺錢機器 | 勝率大於 60%，且 30 日開單數大於 300 |
+| 圖示 | 標籤 | 判斷標準 |  |
+| --- | --- | --- | --- |
+| 標籤 | 判斷標準 |
+| 標籤 | 判斷標準 |
+| 勝率狂人 | 勝率大於 80%，且 30 日開單數大於 60 | <Icon src="/assets/smart-money/on-fire.svg" alt="勝率狂人" />勝率狂人 |
+| 穩定增值 | 半年以上穩定盈利，且 30 日開單數大於 30 | <Icon src="/assets/smart-money/shield.svg" alt="穩定增值" />穩定增值 |
+| 賺錢機器 | 勝率大於 60%，且 30 日開單數大於 300 | <Icon src="/assets/smart-money/lightning.svg" alt="賺錢機器" />賺錢機器 |
 
-這些標籤適合做快速判斷，但不能替代詳情資料。真正決定是否跟隨時，還需要結合目前持倉、歷史交易、回撤與槓桿一起看。
+這些標籤適合做快速判斷，但不能取代詳情資料。真正決定是否跟隨時，還需要結合目前持倉、歷史交易、回撤和槓桿一起看。
 
 ## 看目前持倉
 
@@ -57,10 +64,10 @@ mode: "wide"
 - 倉位規模
 - 槓桿水準
 - 浮動盈虧
-- 入場價格與目前價格差距
+- 入場價格和目前價格差距
 - 是否已經大幅浮盈或浮虧
 
-如果目標錢包已經持有大額浮盈倉位，你現在跟隨可能會以完全不同的價格入場，風險與目標錢包並不一樣。
+如果目標錢包已經持有大額浮盈倉位，你現在跟隨可能會以完全不同的價格入場，風險和目標錢包並不一樣。
 
 ## 看歷史交易
 
@@ -69,7 +76,7 @@ mode: "wide"
 建議重點觀察：
 
 - 盈利是否來自多次交易
-- 虧損時是否及時止損
+- 虧損時是否及時停損
 - 是否經常追漲殺跌
 - 是否頻繁換方向
 - 是否只在某一段行情裡表現好
@@ -85,7 +92,7 @@ mode: "wide"
 - 交易次數
 - 目前槓桿
 - 帳戶規模
-- 近期與長期表現是否一致
+- 近期和長期表現是否一致
 
 這些指標要一起看。單獨一個指標好看，並不代表錢包可靠。
 

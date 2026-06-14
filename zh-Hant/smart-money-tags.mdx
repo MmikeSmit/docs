@@ -10,20 +10,20 @@ export const Icon = ({ src, alt }) => (
 
 ## 錢包畫像標籤
 
-錢包卡片頭像旁邊會顯示一組系統標籤，用來快速概括這個錢包的交易特徵。它們不是使用者手動加入的收藏標籤，而是根據錢包資料生成的畫像。
+錢包卡片頭像旁邊會展示一組系統標籤，用來快速概括這個錢包的交易特徵。它們不是使用者手動加入的收藏標籤，而是根據錢包資料生成的畫像。
 
-常見標籤可以分成四類來理解：
+常見標籤可以按四類理解可以按四類理解：
 
 ### 帳戶規模
 
-用於依當前持倉規模區分錢包體量。
+用於按目前持倉規模區分錢包體量。
 
 | 標籤 | 含義 | 判斷標準 |
 | --- | --- | --- |
-| <Icon src="/assets/smart-money/whale.svg" alt="鯨魚" />鯨魚 | 當前持倉規模很大的錢包。 | 持倉大於 100 萬 USDC |
-| <Icon src="/assets/smart-money/shark.svg" alt="鯊魚" />鯊魚 | 當前持倉規模較大的錢包。 | 持倉 10 萬到 100 萬 USDC |
-| <Icon src="/assets/smart-money/dolphin.svg" alt="海豚" />海豚 | 當前持倉規模中等的錢包。 | 持倉 5 萬到 10 萬 USDC |
-| <Icon src="/assets/smart-money/fish.svg" alt="小魚" />小魚 | 當前持倉規模較小的錢包。 | 持倉 1 萬到 5 萬 USDC |
+| <Icon src="/assets/smart-money/whale.svg" alt="鯨魚" />鯨魚 | 目前持倉規模很大的錢包。 | 持倉大於 100 萬 USDC |
+| <Icon src="/assets/smart-money/shark.svg" alt="鯊魚" />鯊魚 | 目前持倉規模較大的錢包。 | 持倉 10 萬到 100 萬 USDC |
+| <Icon src="/assets/smart-money/dolphin.svg" alt="海豚" />海豚 | 目前持倉規模中等的錢包。 | 持倉 5 萬到 10 萬 USDC |
+| <Icon src="/assets/smart-money/fish.svg" alt="小魚" />小魚 | 目前持倉規模較小的錢包。 | 持倉 1 萬到 5 萬 USDC |
 
 ### 幣種偏好
 
@@ -31,36 +31,81 @@ export const Icon = ({ src, alt }) => (
 
 | 標籤 | 判斷含義 |
 | --- | --- |
-| <Icon src="/assets/smart-money/majors.svg" alt="主流幣" />主流幣 | 較常交易 BTC、ETH 等主流標的。 |
-| <Icon src="/assets/smart-money/alts.svg" alt="山寨幣" />山寨幣 | 較常交易波動較高的非主流標的。 |
-| <Icon src="/assets/smart-money/tradfi.svg" alt="TradFi" />TradFi | 較常交易傳統金融相關標的。 |
-| <Icon src="/assets/smart-money/mixed.svg" alt="綜合" />綜合 | 多種類型都有交易，沒有明顯的單一偏好。 |
+| <Icon src="/assets/smart-money/majors.svg" alt="主流幣" />主流幣 | 更常交易 BTC、ETH 等主流標的。 |
+| <Icon src="/assets/smart-money/alts.svg" alt="山寨幣" />山寨幣 | 更常交易波動較高的非主流標的。 |
+| <Icon src="/assets/smart-money/tradfi.svg" alt="TradFi" />TradFi | 更常交易傳統金融相關標的。 |
+| <Icon src="/assets/smart-money/mixed.svg" alt="綜合" />綜合 | 多種類型都有交易，沒有明顯單一偏好。 |
 
 ### 方向偏好
 
-用於判斷錢包較常做多、做空，還是多空相對均衡。
+用於判斷錢包更常做多、做空，還是多空相對均衡。
 
 | 標籤 | 判斷含義 |
 | --- | --- |
-| <Icon src="/assets/smart-money/long-biased.svg" alt="偏多" />偏多 | 較常持有多頭部位。 |
-| <Icon src="/assets/smart-money/short-biased.svg" alt="偏空" />偏空 | 較常持有空頭部位。 |
-| <Icon src="/assets/smart-money/hybrid.svg" alt="均衡型" />均衡型 | 多空分布相對均衡。 |
+| <Icon src="/assets/smart-money/long-biased.svg" alt="偏多" />偏多 | 更常持有多頭倉位。 |
+| <Icon src="/assets/smart-money/short-biased.svg" alt="偏空" />偏空 | 更常持有空頭倉位。 |
+| <Icon src="/assets/smart-money/hybrid.svg" alt="均衡型" />均衡型 | 多空分佈相對均衡。 |
 
 ### 交易週期與表現標記
 
 用於判斷交易節奏，以及近期表現是否有突出特徵。
 
+### 帳戶規模
+
+用於按目前持倉規模區分錢包體量。
+
+| 標籤 | 判斷含義 |
+| --- | --- |
+| 鯨魚 | 目前持倉規模很大的錢包。 |
+| 鯊魚 | 目前持倉規模較大的錢包。 |
+| 海豚 | 目前持倉規模中等的錢包。 |
+| 小魚 | 目前持倉規模較小的錢包。 |
+
+### 幣種偏好
+
+用於判斷錢包主要交易哪些類型的標的。
+
+| 標籤 | 判斷含義 |
+| --- | --- |
+| 主流幣 | 更常交易 BTC、ETH 等主流標的。 |
+| 山寨幣 | 更常交易波動較高的非主流標的。 |
+| TradFi | 更常交易傳統金融相關標的。 |
+| 綜合 | 多種類型都有交易，沒有明顯單一偏好。 |
+
+### 方向偏好
+
+用於判斷錢包更常做多、做空，還是多空相對均衡。
+
+| 標籤 | 判斷含義 |
+| --- | --- |
+| 偏多 | 更常持有多頭倉位。 |
+| 偏空 | 更常持有空頭倉位。 |
+| 均衡型 | 多空分佈相對均衡。 |
+
+### 交易週期與表現標記
+
+用於判斷交易節奏，以及近期表現是否有突出特徵。
+
+| 標籤 | 判斷含義判斷含義 |
+| --- | --- |
+| 超短線超短線 | 更偏短頻交易。更偏短頻交易。 |
+| 短線短線 | 更偏短週期持倉。更偏短週期持倉。 |
+| 中長線中長線 | 更偏較長週期持倉。更偏較長週期持倉。 |
+| 勝率狂人勝率狂人 | 勝率表現突出。勝率表現突出。 |
+| 穩定增值穩定增值 | 長週期表現更穩定。長週期表現更穩定。 |
+| 賺錢機器賺錢機器 | 交易活躍度和收益表現較突出。交易活躍度和收益表現較突出。 |
+
 | 標籤 | 含義 | 判斷標準 |
 | --- | --- | --- |
-| <Icon src="/assets/smart-money/trend.svg" alt="超短線" />超短線 | 較偏短頻交易。 | 依持倉週期與交易節奏判斷。 |
-| <Icon src="/assets/smart-money/short-term.svg" alt="短線" />短線 | 較偏短週期持倉。 | 依持倉週期與交易節奏判斷。 |
-| <Icon src="/assets/smart-money/high-freq.svg" alt="中長線" />中長線 | 較偏長週期持倉。 | 依持倉週期與交易節奏判斷。 |
+| <Icon src="/assets/smart-money/trend.svg" alt="超短線" />超短線 | 更偏短頻交易。 | 根據持倉週期和交易節奏判斷。 |
+| <Icon src="/assets/smart-money/short-term.svg" alt="短線" />短線 | 更偏短週期持倉。 | 根據持倉週期和交易節奏判斷。 |
+| <Icon src="/assets/smart-money/high-freq.svg" alt="中長線" />中長線 | 更偏較長週期持倉。 | 根據持倉週期和交易節奏判斷。 |
 | <Icon src="/assets/smart-money/on-fire.svg" alt="勝率狂人" />勝率狂人 | 勝率表現突出。 | 勝率大於 80%，且 30 日開單數大於 60 |
-| <Icon src="/assets/smart-money/shield.svg" alt="穩定增值" />穩定增值 | 長週期表現較穩定。 | 半年以上穩定獲利，且 30 日開單數大於 30 |
-| <Icon src="/assets/smart-money/lightning.svg" alt="賺錢機器" />賺錢機器 | 交易活躍度與收益表現較突出。 | 勝率大於 60%，且 30 日開單數大於 300 |
+| <Icon src="/assets/smart-money/shield.svg" alt="穩定增值" />穩定增值 | 長週期表現更穩定。 | 半年以上穩定盈利，且 30 日開單數大於 30 |
+| <Icon src="/assets/smart-money/lightning.svg" alt="賺錢機器" />賺錢機器 | 交易活躍度和收益表現較突出。 | 勝率大於 60%，且 30 日開單數大於 300 |
 
-例如截圖中的 **均衡型 / 偏多 / 短線**，表示這個錢包在畫像上多空分布相對均衡、近期方向較偏多，交易節奏偏短線。使用者可以先透過這些標籤判斷它是否符合自己的跟單偏好，再進入詳情頁查看持倉和歷史交易。
+例如截圖裡的 **均衡型 / 偏多 / 短線**，表示這個錢包在畫像上多空分佈相對均衡、近期方向更偏多，交易節奏偏短線。使用者可以先透過這些標籤判斷它是否符合自己的跟單偏好，再進入詳情頁看持倉和歷史交易。
 
-帳戶規模主要用來判斷錢包體量。體量越大，通常越能代表真實的資金行為；體量較小的錢包，收益率可能更容易被少數交易放大。
+帳戶規模主要用來判斷錢包體量。體量越大，通常越能代表真實資金行為；體量較小的錢包，收益率可能更容易被少數交易放大。
 
-表現標記只說明錢包符合對應的資料條件，不代表後續一定會繼續獲利。判斷是否跟單時，還需要結合當前持倉、回撤、槓桿和交易幣種一起評估。
+表現標記只說明錢包符合對應的資料條件，不代表後續一定會繼續盈利。判斷是否跟隨時，還需要結合目前持倉、回撤、槓桿和交易幣種一起看。
