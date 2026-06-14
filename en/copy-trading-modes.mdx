@@ -1,0 +1,34 @@
+---
+title: "Copy Modes"
+description: "Understand Smart Copy and Instant Copy."
+mode: "wide"
+---
+
+SeaBond currently provides two copy trading modes.
+
+## Smart Copy
+
+Smart Copy is the default mode. It still sizes orders by comparing the lead wallet's position margin with the lead wallet's total account balance, then applying the same ratio to your copy trading account. It is more conservative when syncing existing positions.
+
+If the lead wallet already has open positions, Smart Copy handles the sync more carefully. When a current position's unrealized PnL exceeds 10%, the system skips that position and waits for the next trade.
+
+Suitable for:
+
+- users following a wallet for the first time
+- users who want to reduce the risk of entering existing positions too late
+- users who care more about sync quality than immediately matching every open position
+
+## Instant Copy
+
+Instant Copy follows the lead wallet's positions and capital ratio more directly. It is designed for users who want to catch up with the lead wallet's current trading actions as soon as possible.
+
+Suitable for:
+
+- users who already understand the lead wallet's trading style
+- users who want faster synchronization with target trading actions
+- users who can accept a difference between the current market price and the lead wallet's entry price
+
+<Warning>
+If the lead wallet already has a large unrealized profit, Instant Copy may enter at a worse price. Review the lead wallet's current positions before creating a rule.
+</Warning>
+

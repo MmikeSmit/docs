@@ -11,6 +11,57 @@
   "navigation": {
     "languages": [
       {
+        "language": "en",
+        "pages": [
+          {
+            "group": "Start Here",
+            "pages": [
+              "en/index",
+              "en/quickstart"
+            ]
+          },
+          {
+            "group": "User Guides",
+            "pages": [
+              {
+                "group": "Smart Money Discovery",
+                "pages": [
+                  "en/smart-money",
+                  "en/smart-money-tags",
+                  "en/smart-money-ratings",
+                  "en/smart-money-screening",
+                  "en/smart-money-evaluation"
+                ]
+              },
+              "en/wallet-details",
+              {
+                "group": "Copy Trading",
+                "pages": [
+                  "en/copy-trading",
+                  "en/copy-trading-create",
+                  "en/copy-trading-sizing",
+                  "en/copy-trading-modes",
+                  "en/copy-trading-investment",
+                  "en/copy-trading-troubleshooting",
+                  "en/copy-trading-management",
+                  "en/copy-trading-performance"
+                ]
+              },
+              "en/profile",
+              "en/favorites-labels"
+            ]
+          },
+          {
+            "group": "Account and Rewards",
+            "pages": [
+              "en/invite-points",
+              "en/risk-disclaimer",
+              "en/faq"
+            ]
+          }
+        ]
+      },
+      {
         "language": "cn",
         "pages": [
           {

@@ -1,0 +1,42 @@
+---
+title: "Position Sizing"
+description: "Understand how copy trading position size is calculated proportionally."
+mode: "wide"
+---
+
+SeaBond does not copy the lead wallet's absolute position size 1:1. It uses proportional sizing.
+
+When the lead wallet opens a position, the system first calculates how much margin that position uses relative to the lead wallet's total account balance. The same ratio is then applied to your copy trading account.
+
+## Example
+
+| Item | Example |
+| --- | --- |
+| Lead wallet total balance | 10,000 USDC |
+| Lead wallet position margin | 1,000 USDC |
+| Margin ratio | 10% |
+| Your copy trading allocation | 500 USDC |
+| Your corresponding margin | Approximately 50 USDC |
+
+In other words, copy trading focuses on "how much of the account this trade uses," not the absolute amount used by the lead wallet. This allows a large lead wallet and a smaller copy trading account to keep a similar exposure structure.
+
+## What total allocation does
+
+The **total allocation** you enter when creating a copy trading rule becomes the initial capital base for that copy trading account. Future orders are sized around this account balance.
+
+If you allocate 500 USDC, SeaBond will not open a 10,000 USDC position just because the lead wallet did. It converts the lead wallet's exposure ratio into your 500 USDC copy trading account.
+
+## Small position handling
+
+Exchanges usually enforce a minimum order notional. If the proportional target size falls below the minimum notional, the system may use the minimum executable notional so the order can be placed.
+
+<Warning>
+If your copy trading allocation is much smaller than the lead wallet's account, some small-ratio positions may not match perfectly because of minimum notional, slippage, or execution price differences.
+</Warning>
+
+## Parameters handled by the system
+
+When creating a copy trading rule, you only choose the lead wallet, copy mode, and total allocation. Execution parameters such as leverage handling, position conversion, and whether to follow opens and closes are handled by the system.
+
+This keeps copy trading rules consistent: you control who to follow, how much capital to allocate, and which sync mode to use; the system handles order execution according to the rule.
+
