@@ -1,6 +1,6 @@
 ---
 title: "Phân tích chi tiết ví"
-description: "Xem vị thế, lịch sử giao dịch và hiệu suất rủi ro của ví."
+description: "Xem vị thế, lịch sử giao dịch và hành vi rủi ro của ví."
 mode: "wide"
 ---
 
@@ -8,115 +8,108 @@ export const Icon = ({ src, alt }) => (
   <img src={src} alt={alt} style={{ width: 18, height: 18, display: 'inline-block', verticalAlign: 'middle', marginRight: 6 }} />
 );
 
-Trang chi tiết ví là nơi để bạn đánh giá xem một ví có đáng tiếp tục theo dõi hay không. Smart Money giúp bạn tìm ra các ví ứng viên, còn trang chi tiết giúp bạn đánh giá liệu nó có thực sự phù hợp để copy hay không.
+Trang chi tiết ví là nơi bạn quyết định xem một ví có đáng tiếp tục theo dõi hay không. Smart Money giúp bạn tìm ứng viên; trang chi tiết ví giúp bạn quyết định xem một ứng viên có thực sự phù hợp để đi theo hay không.
 
-## Trước tiên hãy xem cách nó kiếm tiền
+## Bắt đầu bằng việc xem ví kiếm tiền như thế nào
 
-Đừng chỉ nhìn vào con số lợi nhuận. Sau khi vào trang chi tiết, hãy xem trước hết lợi nhuận của ví này đến từ đâu:
+Đừng chỉ dựa vào con số PnL nổi bật. Sau khi mở trang chi tiết, trước hết hãy hiểu nguồn PnL đến từ đâu:
 
-- Là giao dịch ổn định lâu dài, hay dựa vào một hai lệnh lớn?
-- Là giao dịch thuận xu hướng, hay liên tục tăng vị thế và gồng lỗ?
-- Là sóng coin chính, hay altcoin biến động cao?
-- Việc đóng vị thế có kỷ luật không?
-- Sau khi thua lỗ có mất kiểm soát rồi tăng vị thế không?
+- Là giao dịch có thể lặp lại trong dài hạn, hay một hai lệnh thắng lớn?
+- Nó đi theo động lượng, hay nhồi thêm vào các vị thế đang lỗ?
+- Nó giao dịch các thị trường chính, hay altcoin biến động cao?
+- Việc đóng lệnh có kỷ luật không?
+- Nó có mất kiểm soát sau khi thua lỗ không?
 
-Nếu nguồn lợi nhuận chưa rõ ràng, bạn có thể tiếp tục xem lịch sử giao dịch, vị thế hiện tại và các chỉ số rủi ro, rồi mới quyết định bước tiếp theo.
+Nếu nguồn PnL chưa rõ ràng, hãy xem lại lịch sử giao dịch, vị thế hiện tại và các chỉ số rủi ro trước khi hành động.
 
-## Xem chân dung ví
+## Đọc chân dung ví
 
-Trang chi tiết cũng sẽ hiển thị các nhãn chân dung ví, giúp bạn nhanh chóng hiểu phong cách giao dịch của ví này.
+Trang chi tiết cũng hiển thị các nhãn chân dung ví để bạn nhanh chóng hiểu phong cách giao dịch của ví này.
 
-- **Quy mô tài khoản**: Phân biệt quy mô vị thế hiện tại của ví, ví dụ Cá voi, Cá mập, Cá heo, Cá nhỏ.
-- **Sở thích loại coin**: Đánh giá nó thường giao dịch Coin chính, Altcoin, tài sản TradFi, hay nhiều loại đều có.
-- **Sở thích hướng giao dịch**: Đánh giá nó Thiên về long, Thiên về short, hay long/short tương đối cân bằng.
-- **Chu kỳ giao dịch**: Đánh giá nó thiên về Scalping, Ngắn hạn, hay Trung-dài hạn.
-- **Dấu hiệu hiệu suất**: Gợi ý các đặc điểm nổi bật về tỷ lệ thắng, tính ổn định hoặc mức độ hoạt động giao dịch.
+- **Quy mô tài khoản**: phân loại quy mô vị thế hiện tại, ví dụ Cá voi, Cá mập, Cá heo hoặc Cá nhỏ.
+- **Sở thích loại coin**: cho biết ví chủ yếu giao dịch Coin chính, Altcoin, thị trường TradFi, hay hỗn hợp.
+- **Sở thích hướng giao dịch**: cho biết ví thiên về long, short, hay cân bằng.
+- **Chu kỳ giao dịch**: cho biết ví thiên về Scalping, giao dịch ngắn hạn, hay giữ lâu hơn.
+- **Dấu hiệu hiệu suất**: làm nổi bật tỷ lệ thắng, tính ổn định hoặc mức độ hoạt động giao dịch đáng chú ý.
 
-Tiêu chí đánh giá nhãn quy mô tài khoản:
+Tiêu chí phổ biến của chân dung ví:
 
-| Nhãn | Tiêu chí đánh giá |
-| --- | --- |
-| Nhãn | Tiêu chí đánh giá |
-| Cá voi <Icon src="/assets/smart-money/whale.svg" alt="Cá voi" />Cá voi | Vị thế lớn hơn 1 triệu USDC |
-| Cá mập <Icon src="/assets/smart-money/shark.svg" alt="Cá mập" />Cá mập | Vị thế từ 100 nghìn đến 1 triệu USDC |
-| Cá heo <Icon src="/assets/smart-money/dolphin.svg" alt="Cá heo" />Cá heo | Vị thế từ 50 nghìn đến 100 nghìn USDC |
-| Cá nhỏ <Icon src="/assets/smart-money/fish.svg" alt="Cá nhỏ" />Cá nhỏ | Vị thế từ 10 nghìn đến 50 nghìn USDC |
-
-Tiêu chí đánh giá dấu hiệu hiệu suất:
-
-| Biểu tượng | Nhãn | Tiêu chí đánh giá |  |
+| Nhóm nhãn | Nhãn | Ý nghĩa | Tiêu chí đánh giá |
 | --- | --- | --- | --- |
-| Nhãn | Tiêu chí đánh giá |
-| Nhãn | Tiêu chí đánh giá |
-| Thợ săn tỷ lệ thắng | Tỷ lệ thắng lớn hơn 80%, và số lệnh mở trong 30 ngày lớn hơn 60 | <Icon src="/assets/smart-money/on-fire.svg" alt="Thợ săn tỷ lệ thắng" />Thợ săn tỷ lệ thắng |
-| Tăng trưởng ổn định | Có lợi nhuận ổn định trên nửa năm, và số lệnh mở trong 30 ngày lớn hơn 30 | <Icon src="/assets/smart-money/shield.svg" alt="Tăng trưởng ổn định" />Tăng trưởng ổn định |
-| Cỗ máy lợi nhuận | Tỷ lệ thắng lớn hơn 60%, và số lệnh mở trong 30 ngày lớn hơn 300 | <Icon src="/assets/smart-money/lightning.svg" alt="Cỗ máy lợi nhuận" />Cỗ máy lợi nhuận |
+| Quy mô tài khoản | <Icon src="/assets/smart-money/whale.svg" alt="Cá voi" />Cá voi | Quy mô vị thế hiện tại rất lớn. | Vị thế lớn hơn 1.000.000 USDC |
+| Quy mô tài khoản | <Icon src="/assets/smart-money/shark.svg" alt="Cá mập" />Cá mập | Quy mô vị thế hiện tại lớn. | Vị thế từ 100.000 đến 1.000.000 USDC |
+| Quy mô tài khoản | <Icon src="/assets/smart-money/dolphin.svg" alt="Cá heo" />Cá heo | Quy mô vị thế hiện tại trung bình. | Vị thế từ 50.000 đến 100.000 USDC |
+| Quy mô tài khoản | <Icon src="/assets/smart-money/fish.svg" alt="Cá nhỏ" />Cá nhỏ | Quy mô vị thế hiện tại nhỏ hơn. | Vị thế từ 10.000 đến 50.000 USDC |
+| Dấu hiệu hiệu suất | <Icon src="/assets/smart-money/on-fire.svg" alt="Thợ săn tỷ lệ thắng" />Thợ săn tỷ lệ thắng | Tỷ lệ thắng nổi bật. | Tỷ lệ thắng lớn hơn 80% và hơn 60 lệnh mở trong 30 ngày gần nhất |
+| Dấu hiệu hiệu suất | <Icon src="/assets/smart-money/shield.svg" alt="Tăng trưởng ổn định" />Tăng trưởng ổn định | Hiệu suất dài hạn ổn định hơn. | Có lợi nhuận trên sáu tháng và hơn 30 lệnh mở trong 30 ngày gần nhất |
+| Dấu hiệu hiệu suất | <Icon src="/assets/smart-money/lightning.svg" alt="Cỗ máy lợi nhuận" />Cỗ máy lợi nhuận | Mức độ hoạt động và khả năng sinh lời nổi bật. | Tỷ lệ thắng lớn hơn 60% và hơn 300 lệnh mở trong 30 ngày gần nhất |
 
-Những nhãn này phù hợp để đánh giá nhanh, nhưng không thể thay thế dữ liệu chi tiết. Khi thực sự quyết định có nên copy hay không, bạn vẫn cần xem xét đồng thời vị thế hiện tại, lịch sử giao dịch, drawdown và đòn bẩy.
+Các nhãn này hữu ích để định hướng nhanh, nhưng không thay thế được việc phân tích chi tiết. Trước khi đi theo, bạn cần xem xét đồng thời vị thế hiện tại, lịch sử giao dịch, drawdown và đòn bẩy.
 
-## Xem vị thế hiện tại
+## Kiểm tra vị thế hiện tại
 
-Vị thế hiện tại sẽ ảnh hưởng trực tiếp đến việc bạn có phù hợp để copy ngay bây giờ hay không.
+Vị thế hiện tại ảnh hưởng trực tiếp đến việc đi theo ngay bây giờ có hợp lý hay không.
 
-Tập trung xem:
+Hãy tập trung vào:
 
-- Loại coin đang giữ vị thế
-- Quy mô vị thế
-- Mức đòn bẩy
-- Lãi/lỗ chưa thực hiện
-- Chênh lệch giữa giá vào lệnh và giá hiện tại
-- Đã có lãi hoặc lỗ chưa thực hiện lớn chưa
+- thị trường hoặc hợp đồng
+- quy mô vị thế
+- đòn bẩy
+- PnL chưa thực hiện
+- giá vào lệnh so với giá mark hiện tại
+- vị thế đã có lãi hoặc lỗ chưa thực hiện lớn hay chưa
 
-Nếu ví mục tiêu đã giữ một vị thế có lãi chưa thực hiện lớn, việc bạn copy bây giờ có thể vào lệnh với mức giá hoàn toàn khác, rủi ro và ví mục tiêu sẽ không giống nhau.
+Nếu ví dẫn đầu đã có lãi chưa thực hiện lớn, việc copy ngay bây giờ có thể khiến bạn vào lệnh ở mức giá rất khác. Hồ sơ rủi ro của bạn sẽ không khớp với giao dịch gốc của ví dẫn đầu.
 
-## Xem lịch sử giao dịch
+## Kiểm tra lịch sử giao dịch
 
-Lịch sử giao dịch có thể cho bạn biết liệu ví này có thói quen giao dịch ổn định hay không.
+Lịch sử giao dịch cho thấy ví có hành vi giao dịch lặp lại được hay không.
 
-Khuyến nghị tập trung quan sát:
+Hãy xem xét:
 
-- Lợi nhuận có đến từ nhiều giao dịch hay không
-- Có cắt lỗ kịp thời khi thua lỗ hay không
-- Có thường xuyên đuổi đỉnh bắt đáy hay không
-- Có thường xuyên đổi hướng hay không
-- Chỉ thể hiện tốt trong một giai đoạn thị trường nhất định hay không
+- lợi nhuận có đến từ nhiều giao dịch hay không
+- thua lỗ có được cắt kịp thời hay không
+- có thường xuyên đuổi sóng hay không
+- có thường xuyên đổi hướng hay không
+- chỉ thể hiện tốt trong một giai đoạn thị trường nhất định hay không
 
-Nếu lịch sử của một ví quá ngắn, hoặc lợi nhuận chủ yếu được đẩy lên nhờ một vài giao dịch, tốt nhất bạn nên thêm vào yêu thích để quan sát trước.
+Nếu ví có lịch sử ngắn hoặc chủ yếu dựa vào một vài giao dịch, hãy lưu lại trước và quan sát thêm.
 
-## Xem chỉ số rủi ro
+## Kiểm tra chỉ số rủi ro
 
-Lợi nhuận cao không có nghĩa là phù hợp để copy. Bạn còn cần xem:
+Lợi nhuận cao không có nghĩa là ví phù hợp để đi theo. Bạn cũng nên xem:
 
-- Drawdown tối đa
-- Tỷ lệ thắng
-- Số lần giao dịch
-- Đòn bẩy hiện tại
-- Quy mô tài khoản
-- Hiệu suất gần đây và dài hạn có nhất quán không
+- drawdown tối đa
+- tỷ lệ thắng
+- số lần giao dịch
+- đòn bẩy hiện tại
+- quy mô tài khoản
+- mức độ nhất quán giữa hiệu suất gần đây và dài hạn
 
-Các chỉ số này phải xem cùng nhau. Một chỉ số riêng lẻ trông đẹp không có nghĩa là ví đó đáng tin cậy.
+Các chỉ số này phải được đọc cùng nhau. Một chỉ số nổi bật không làm cho ví trở nên đáng tin cậy.
 
-## Loại ví nào không phù hợp để copy
+## Những ví có thể không phù hợp để đi theo
 
-Nếu xuất hiện các tình huống dưới đây, bạn nên thận trọng:
+Hãy thận trọng khi bạn thấy:
 
-- Quy mô tài khoản rất nhỏ nhưng tỷ suất lợi nhuận cực cao
-- Chủ yếu dựa vào lợi nhuận đột biến từ một lệnh
-- Vị thế hiện tại đã có lãi chưa thực hiện lớn
-- Thường xuyên dùng đòn bẩy cao hoặc full vị thế
-- Mức giảm tối đa rất sâu
-- Phong cách giao dịch gần đây đột nhiên thay đổi
-- Bạn không thể hiểu logic giao dịch của nó
+- quy mô tài khoản rất nhỏ nhưng lợi nhuận cực cao
+- PnL chủ yếu được kéo lên bởi một lệnh đột biến
+- vị thế hiện tại đã có lãi chưa thực hiện lớn
+- thường xuyên giao dịch đòn bẩy cao hoặc full vị thế
+- drawdown sâu
+- gần đây phong cách giao dịch thay đổi đột ngột
+- logic giao dịch mà bạn không thể hiểu
 
-## Sau khi xem trang chi tiết thì làm gì
+## Sau trang chi tiết thì làm gì
 
-Sau khi xem xong trang chi tiết, không nhất thiết phải copy ngay lập tức.
+Bạn không cần copy trade ngay sau khi xem một ví.
 
 Quy trình an toàn hơn là:
 
-1. Thêm ví vào yêu thích trước.
-2. Gắn nhãn, ghi lại lý do bạn quan tâm.
-3. Quan sát vài ngày, xem nó có tiếp tục duy trì phong cách giao dịch ban đầu hay không.
-4. Sau đó mới quyết định có dùng số vốn nhỏ để thử copy hay không.
+1. Thêm ví vào yêu thích.
+2. Áp dụng nhãn để ghi lại lý do ví đó đáng quan tâm.
+3. Quan sát vài ngày để xem phong cách có duy trì ổn định không.
+4. Nếu vẫn phù hợp, hãy thử với một mức phân bổ copy trade nhỏ.
 
-Một ví tốt không nhất thiết phù hợp để copy ngay. Nhiều khi, việc thêm vào yêu thích để quan sát vài ngày trước sẽ an toàn hơn là lao vào copy ngay.
+Một ví tốt không phải lúc nào cũng là ví bạn nên đi theo ngay. Thông thường, lưu lại và quan sát vài ngày sẽ hữu ích hơn là vào lệnh ngay.
+

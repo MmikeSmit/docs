@@ -1,6 +1,6 @@
 ---
 title: "Análisis de detalle de wallet"
-description: "Revisa las posiciones, el historial de operaciones y el desempeño de riesgo de la wallet."
+description: "Revisa las posiciones, el historial de operaciones y el comportamiento de riesgo de la wallet."
 mode: "wide"
 ---
 
@@ -8,115 +8,107 @@ export const Icon = ({ src, alt }) => (
   <img src={src} alt={alt} style={{ width: 18, height: 18, display: 'inline-block', verticalAlign: 'middle', marginRight: 6 }} />
 );
 
-La página de detalle de la wallet es donde decides si una wallet vale la pena seguir observando. Smart Money te ayuda a encontrar wallets candidatas, y la página de detalle te ayuda a juzgar si realmente es una wallet adecuada para seguir.
+La página de detalle de wallet es donde decides si una wallet merece seguir tu atención. Smart Money te ayuda a encontrar candidatas; el detalle de wallet te ayuda a decidir si una candidata es realmente adecuada para seguir.
 
-## Mira primero cómo gana dinero
+## Empieza por cómo gana dinero la wallet
 
-No te quedes solo con la cifra de rendimiento. Al entrar a la página de detalle, fíjate primero en cómo se genera el rendimiento de esta wallet:
+No te quedes solo con la cifra de PnL principal. Después de abrir la página de detalle, comprende primero de dónde proviene el PnL:
 
-- ¿Es de trading estable a largo plazo o depende de una o dos operaciones grandes?
-- ¿Opera siguiendo la tendencia o añade posiciones aguantando pérdidas?
-- ¿Hace swing trading en principales o juega con la alta volatilidad de tokens pequeños?
-- ¿Cierra posiciones con disciplina?
-- ¿Tras una pérdida, pierde el control y añade posiciones?
+- ¿Es trading repetible a largo plazo, o una o dos grandes ganancias?
+- ¿Sigue el momentum o promedia en posiciones perdedoras?
+- ¿Opera mercados principales o alts de alta volatilidad?
+- ¿Las salidas son disciplinadas?
+- ¿Pierde el control después de sufrir pérdidas?
 
-Si la fuente del rendimiento no es clara, puedes seguir revisando el historial de operaciones, la posición actual y los indicadores de riesgo antes de decidir el siguiente paso.
+Si la fuente del PnL no está clara, revisa el historial de operaciones, las posiciones actuales y los indicadores de riesgo antes de actuar.
 
-## Mira el perfil de la wallet
+## Lee el perfil de la wallet
 
-La página de detalle también muestra las etiquetas de perfil de la wallet, para ayudarte a entender rápidamente su estilo de trading.
+La página de detalle también muestra las etiquetas de perfil de la wallet para que puedas entender rápidamente su estilo de trading.
 
-- **Tamaño de cuenta**: diferencia el volumen actual de la posición de la wallet, por ejemplo Ballena, Tiburón, Delfín, Pez.
-- **Preferencia de activos**: indica si opera con más frecuencia Principales, Alts, activos TradFi o varios tipos.
-- **Preferencia de dirección**: indica si tiene Sesgo largo, Sesgo corto, o está relativamente Equilibrado.
-- **Ciclo de trading**: indica si tiende al Scalping, Corto plazo o Mediano plazo.
-- **Marcadores de desempeño**: señalan características destacadas en tasa de victoria, estabilidad o actividad de trading.
+- **Tamaño de cuenta**: clasifica la exposición actual de la posición, como Ballena, Tiburón, Delfín o Pez.
+- **Preferencia de activos**: indica si la wallet opera principalmente Principales, Alts, mercados TradFi o una mezcla.
+- **Sesgo direccional**: indica si la wallet se inclina hacia largo, corto o equilibrado.
+- **Ciclo de trading**: indica si la wallet tiende al scalping, al corto plazo o a mantener posiciones más tiempo.
+- **Marcadores de desempeño**: destacan una tasa de victoria, consistencia o actividad de trading notables.
 
-Criterios para las etiquetas de tamaño de cuenta:
+Criterios habituales del perfil de wallet:
 
-| Etiqueta | Criterio |
-| --- | --- |
-| Etiqueta | Criterio |
-| Ballena <Icon src="/assets/smart-money/whale.svg" alt="Ballena" />Ballena | Posición mayor a 1 millón de USDC |
-| Tiburón <Icon src="/assets/smart-money/shark.svg" alt="Tiburón" />Tiburón | Posición entre 100 mil y 1 millón de USDC |
-| Delfín <Icon src="/assets/smart-money/dolphin.svg" alt="Delfín" />Delfín | Posición entre 50 mil y 100 mil USDC |
-| Pez <Icon src="/assets/smart-money/fish.svg" alt="Pez" />Pez | Posición entre 10 mil y 50 mil USDC |
-
-Criterios para los marcadores de desempeño:
-
-| Icono | Etiqueta | Criterio |  |
+| Categoría de etiqueta | Etiqueta | Significado | Criterio |
 | --- | --- | --- | --- |
-| Etiqueta | Criterio |
-| Etiqueta | Criterio |
-| Cazador de win-rate | Win rate mayor al 80% y más de 60 operaciones abiertas en 30 días | <Icon src="/assets/smart-money/on-fire.svg" alt="Cazador de win-rate" />Cazador de win-rate |
-| Compositor estable | Beneficio estable durante más de medio año y más de 30 operaciones abiertas en 30 días | <Icon src="/assets/smart-money/shield.svg" alt="Compositor estable" />Compositor estable |
-| Máquina de beneficios | Win rate mayor al 60% y más de 300 operaciones abiertas en 30 días | <Icon src="/assets/smart-money/lightning.svg" alt="Máquina de beneficios" />Máquina de beneficios |
+| Tamaño de cuenta | <Icon src="/assets/smart-money/whale.svg" alt="Ballena" />Ballena | Exposición actual de posición muy grande. | Exposición de posición superior a 1.000.000 USDC |
+| Tamaño de cuenta | <Icon src="/assets/smart-money/shark.svg" alt="Tiburón" />Tiburón | Exposición actual de posición grande. | Exposición de posición entre 100.000 y 1.000.000 USDC |
+| Tamaño de cuenta | <Icon src="/assets/smart-money/dolphin.svg" alt="Delfín" />Delfín | Exposición actual de posición mediana. | Exposición de posición entre 50.000 y 100.000 USDC |
+| Tamaño de cuenta | <Icon src="/assets/smart-money/fish.svg" alt="Pez" />Pez | Exposición actual de posición más pequeña. | Exposición de posición entre 10.000 y 50.000 USDC |
+| Marcador de desempeño | <Icon src="/assets/smart-money/on-fire.svg" alt="Cazador de win-rate" />Cazador de win-rate | Comportamiento destacado en tasa de victoria. | Tasa de victoria superior al 80% y más de 60 operaciones abiertas en los últimos 30 días |
+| Marcador de desempeño | <Icon src="/assets/smart-money/shield.svg" alt="Compositor estable" />Compositor estable | Desempeño más estable en ciclos largos. | Rentable durante más de seis meses y más de 30 operaciones abiertas en los últimos 30 días |
+| Marcador de desempeño | <Icon src="/assets/smart-money/lightning.svg" alt="Máquina de beneficios" />Máquina de beneficios | Actividad y rentabilidad destacadas. | Tasa de victoria superior al 60% y más de 300 operaciones abiertas en los últimos 30 días |
 
-Estas etiquetas sirven para hacer juicios rápidos, pero no sustituyen los datos detallados. Para decidir realmente si seguir a una wallet, también debes considerar conjuntamente la posición actual, el historial de operaciones, el drawdown y el apalancamiento.
+Estas etiquetas son útiles para una orientación rápida, pero no reemplazan un análisis detallado. Antes de seguir una wallet, revisa en conjunto las posiciones actuales, el historial de operaciones, el drawdown y el apalancamiento.
 
-## Mira la posición actual
+## Revisa las posiciones actuales
 
-La posición actual influye directamente en si te conviene seguirla ahora.
+Las posiciones actuales afectan directamente si es razonable seguirla ahora.
 
-Puntos clave a revisar:
+Fíjate en:
 
-- Activos en la posición actual
-- Tamaño de la posición
-- Nivel de apalancamiento
+- mercado o contrato
+- tamaño de la posición
+- apalancamiento
 - PnL no realizado
-- Diferencia entre el precio de entrada y el precio actual
-- Si ya acumula una gran ganancia o pérdida no realizada
+- precio de entrada frente al precio actual de marca
+- si la posición ya tiene una gran ganancia o pérdida no realizada
 
-Si la wallet objetivo ya tiene una posición con una gran ganancia no realizada, al seguirla ahora podrías entrar a un precio totalmente distinto, con un riesgo diferente al de la wallet objetivo.
+Si la wallet líder ya mantiene una gran ganancia no realizada, copiarla ahora podría hacer que entres a un precio muy distinto. Tu perfil de riesgo no coincidirá con la operación original de la wallet líder.
 
-## Mira el historial de operaciones
+## Revisa el historial de operaciones
 
-El historial de operaciones te dice si la wallet tiene hábitos de trading estables.
+El historial de operaciones muestra si la wallet tiene un comportamiento de trading repetible.
 
-Te recomendamos observar especialmente:
+Revisa:
 
-- Si las ganancias provienen de múltiples operaciones
-- Si corta pérdidas a tiempo cuando hay pérdidas
-- Si suele perseguir subidas y vender en pánico
-- Si cambia de dirección con frecuencia
-- Si solo destaca durante cierto tramo del mercado
+- si las ganancias provinieron de muchas operaciones
+- si las pérdidas se cortaron a tiempo
+- si suele perseguir movimientos
+- si cambia de dirección con demasiada frecuencia
+- si solo tuvo buen desempeño en un único régimen de mercado
 
-Si el historial de una wallet es muy corto, o sus ganancias provienen principalmente de unas pocas operaciones grandes, mejor agrégala a favoritos para observar.
+Si la wallet tiene un historial corto o depende principalmente de unas pocas operaciones, guárdala primero y obsérvala durante más tiempo.
 
-## Mira los indicadores de riesgo
+## Revisa los indicadores de riesgo
 
-Un alto rendimiento no significa que sea adecuada para seguir. También debes mirar:
+Una alta rentabilidad no significa que la wallet sea adecuada para seguir. Revisa también:
 
-- Drawdown máximo
-- Tasa de victoria
-- Número de operaciones
-- Apalancamiento actual
-- Tamaño de cuenta
-- Si el desempeño reciente y el de largo plazo son consistentes
+- drawdown máximo
+- tasa de victoria
+- número de operaciones
+- apalancamiento actual
+- tamaño de cuenta
+- consistencia entre el desempeño reciente y el de largo plazo
 
-Estos indicadores hay que verlos juntos. Que un solo indicador se vea bien no significa que la wallet sea confiable.
+Estos indicadores deben leerse en conjunto. Un solo indicador fuerte no hace que una wallet sea confiable.
 
-## Qué wallets no conviene seguir
+## Wallets que pueden no ser adecuadas para seguir
 
-Si se presentan las siguientes situaciones, se recomienda precaución:
+Ten cuidado cuando veas:
 
-- Tamaño de cuenta muy pequeño pero tasa de retorno extremadamente alta
-- Depende principalmente de una sola operación con ganancia enorme
-- La posición actual ya acumula una gran ganancia no realizada
-- Usa con frecuencia alto apalancamiento o posición completa
-- Drawdown muy profundo
-- Su estilo de trading ha cambiado bruscamente hace poco
-- No logras entender su lógica de trading
+- tamaño de cuenta muy pequeño con rentabilidades extremadamente altas
+- PnL impulsado principalmente por una operación de tamaño desproporcionado
+- posiciones actuales ya con gran ganancia no realizada
+- operaciones frecuentes con alto apalancamiento o tamaño completo
+- drawdown profundo
+- cambio brusco reciente en el estilo de trading
+- lógica de trading que no logras entender
 
 ## Qué hacer después de la página de detalle
 
-Después de revisar la página de detalle, no necesariamente debes hacer copy trading de inmediato.
+No necesitas hacer copy trading inmediatamente después de revisar una wallet.
 
-Un proceso más prudente es:
+Un flujo más seguro es:
 
-1. Primero agrega la wallet a favoritos.
-2. Ponle una etiqueta y registra el motivo de tu interés.
-3. Obsérvala unos días, para ver si mantiene su estilo de trading original.
-4. Luego decide si probar el copy trading con capital pequeño.
+1. Agrega la wallet a favoritos.
+2. Aplica etiquetas que registren por qué te resulta interesante.
+3. Obsérvala durante unos días para ver si su estilo se mantiene consistente.
+4. Si sigue encajando, prueba con una asignación pequeña de copy trading.
 
-Una buena wallet no necesariamente es adecuada para seguir de inmediato. Muchas veces, agregarla a favoritos y observar unos días es más prudente que entrar a seguirla de una.
+Una buena wallet no siempre es una wallet que debas seguir de inmediato. A menudo, guardarla y observar durante unos días es más útil que entrar enseguida.
