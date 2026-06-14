@@ -6,53 +6,78 @@ mode: "wide"
 
 ## Etiquetas de perfil de billetera
 
-Junto al avatar de la tarjeta de la billetera se muestra un grupo de etiquetas del sistema que resumen rápidamente las características de operación de esa billetera. No son las etiquetas de favoritos que tú agregas manualmente, sino un perfil generado a partir de los datos de la billetera.
+Junto al avatar de la tarjeta de la billetera se muestra un grupo de etiquetas del sistema que resumen rápidamente las características de operación de esa billetera. No son las etiquetas de favoritos que agregas manualmente, sino un perfil generado a partir de los datos de la billetera.
 
-Etiquetas comunes:
+Las etiquetas comunes se pueden entender en cuatro categorías:
 
-| Tipo de etiqueta | Icono | Etiqueta | Significado |
-| --- | --- | --- | --- |
-| Tamaño de cuenta | <img src="/assets/smart-money/whale.svg" alt="Ballena" width="18" /> | Ballena | Clasifica las billeteras por el tamaño de la posición actual. |
-| Tamaño de cuenta | <img src="/assets/smart-money/shark.svg" alt="Tiburón" width="18" /> | Tiburón | Clasifica las billeteras por el tamaño de la posición actual. |
-| Tamaño de cuenta | <img src="/assets/smart-money/dolphin.svg" alt="Delfín" width="18" /> | Delfín | Clasifica las billeteras por el tamaño de la posición actual. |
-| Tamaño de cuenta | <img src="/assets/smart-money/fish.svg" alt="Pez pequeño" width="18" /> | Pez pequeño | Clasifica las billeteras por el tamaño de la posición actual. |
-| Preferencia de activos | <img src="/assets/smart-money/majors.svg" alt="Majors" width="18" /> | Majors | Indica qué tipo de activos opera principalmente la billetera. |
-| Preferencia de activos | <img src="/assets/smart-money/alts.svg" alt="Altcoins" width="18" /> | Altcoins | Indica qué tipo de activos opera principalmente la billetera. |
-| Preferencia de activos | <img src="/assets/smart-money/tradfi.svg" alt="TradFi" width="18" /> | TradFi | Indica qué tipo de activos opera principalmente la billetera. |
-| Preferencia de activos | <img src="/assets/smart-money/mixed.svg" alt="Mixto" width="18" /> | Mixto | Indica qué tipo de activos opera principalmente la billetera. |
-| Preferencia de dirección | <img src="/assets/smart-money/long-biased.svg" alt="Sesgo largo" width="18" /> | Sesgo largo | Indica si la billetera tiende más a largos, cortos o si está relativamente equilibrada. |
-| Preferencia de dirección | <img src="/assets/smart-money/short-biased.svg" alt="Sesgo corto" width="18" /> | Sesgo corto | Indica si la billetera tiende más a largos, cortos o si está relativamente equilibrada. |
-| Preferencia de dirección | <img src="/assets/smart-money/hybrid.svg" alt="Equilibrada" width="18" /> | Equilibrada | Indica si la billetera tiende más a largos, cortos o si está relativamente equilibrada. |
-| Horizonte de trading | <img src="/assets/smart-money/trend.svg" alt="Ultra corto plazo" width="18" /> | Ultra corto plazo | Indica si la billetera opera en frecuencias cortas o si mantiene posiciones más largas. |
-| Horizonte de trading | <img src="/assets/smart-money/short-term.svg" alt="Corto plazo" width="18" /> | Corto plazo | Indica si la billetera opera en frecuencias cortas o si mantiene posiciones más largas. |
-| Horizonte de trading | <img src="/assets/smart-money/high-freq.svg" alt="Mediano y largo plazo" width="18" /> | Mediano y largo plazo | Indica si la billetera opera en frecuencias cortas o si mantiene posiciones más largas. |
-| Marca de desempeño | <img src="/assets/smart-money/on-fire.svg" alt="Rey del win rate" width="18" /> | Rey del win rate | Resalta billeteras con desempeño destacado en porcentaje de aciertos, estabilidad o actividad de trading. |
-| Marca de desempeño | <img src="/assets/smart-money/shield.svg" alt="Crecimiento estable" width="18" /> | Crecimiento estable | Resalta billeteras con desempeño destacado en porcentaje de aciertos, estabilidad o actividad de trading. |
-| Marca de desempeño | <img src="/assets/smart-money/lightning.svg" alt="Máquina de ganancias" width="18" /> | Máquina de ganancias | Resalta billeteras con desempeño destacado en porcentaje de aciertos, estabilidad o actividad de trading. |
+### Tamaño de cuenta
 
-Por ejemplo, el **Equilibrada / Sesgo largo / Corto plazo** que ves en la captura indica que la distribución de la billetera entre largos y cortos está relativamente equilibrada, recientemente se inclina más hacia largos y su ritmo de trading es de corto plazo. Puedes usar primero estas etiquetas para juzgar si encaja con tus preferencias de copy trading y luego entrar al detalle para ver posiciones e historial.
+Se usa para clasificar el volumen de la billetera según el tamaño de la posición actual.
+
+| Etiqueta | Significado |
+| --- | --- |
+| Ballena | Billetera con una posición actual muy grande. |
+| Tiburón | Billetera con una posición actual grande. |
+| Delfín | Billetera con una posición actual mediana. |
+| Pez pequeño | Billetera con una posición actual pequeña. |
+
+### Preferencia de activos
+
+Se usa para identificar qué tipo de activos opera principalmente la billetera.
+
+| Etiqueta | Significado |
+| --- | --- |
+| Majors | Opera con más frecuencia activos principales como BTC y ETH. |
+| Altcoins | Opera con más frecuencia activos no principales y de alta volatilidad. |
+| TradFi | Opera con más frecuencia activos relacionados con finanzas tradicionales. |
+| Mixto | Opera varios tipos sin una preferencia única clara. |
+
+### Preferencia de dirección
+
+Se usa para determinar si la billetera tiende más a posiciones largas, cortas o si está relativamente equilibrada.
+
+| Etiqueta | Significado |
+| --- | --- |
+| Sesgo largo | Mantiene con más frecuencia posiciones largas. |
+| Sesgo corto | Mantiene con más frecuencia posiciones cortas. |
+| Equilibrada | Distribución entre largos y cortos relativamente equilibrada. |
+
+### Horizonte de trading y marcas de desempeño
+
+Se usa para identificar el ritmo de trading y si hay características destacadas en el desempeño reciente.
+
+| Etiqueta | Significado |
+| --- | --- |
+| Ultra corto plazo | Tiende a operar con alta frecuencia. |
+| Corto plazo | Tiende a mantener posiciones por períodos cortos. |
+| Mediano y largo plazo | Tiende a mantener posiciones por períodos más largos. |
+| Rey del win rate | Desempeño destacado en porcentaje de aciertos. |
+| Crecimiento estable | Desempeño más estable en plazos largos. |
+| Máquina de ganancias | Actividad de trading y rentabilidad destacadas. |
+
+Por ejemplo, el **Equilibrada / Sesgo largo / Corto plazo** que aparece en la captura indica que la distribución de la billetera entre largos y cortos está relativamente equilibrada, recientemente se inclina más hacia largos y su ritmo de trading es de corto plazo. Puedes usar primero estas etiquetas para juzgar si encaja con tus preferencias de copy trading y luego entrar al detalle para ver posiciones e historial.
 
 ### Cómo se determina el tamaño de cuenta
 
 El tamaño de cuenta se clasifica según el monto de la posición actual:
 
-| Icono | Etiqueta | Criterio |
-| --- | --- | --- |
-| <img src="/assets/smart-money/whale.svg" alt="Ballena" width="18" /> | Ballena | Posición mayor a 1 millón de USDC |
-| <img src="/assets/smart-money/shark.svg" alt="Tiburón" width="18" /> | Tiburón | Posición entre 100 mil y 1 millón de USDC |
-| <img src="/assets/smart-money/dolphin.svg" alt="Delfín" width="18" /> | Delfín | Posición entre 50 mil y 100 mil USDC |
-| <img src="/assets/smart-money/fish.svg" alt="Pez pequeño" width="18" /> | Pez pequeño | Posición entre 10 mil y 50 mil USDC |
+| Etiqueta | Criterio |
+| --- | --- |
+| Ballena | Posición mayor a 1.000.000 USDC |
+| Tiburón | Posición entre 100.000 y 1.000.000 USDC |
+| Delfín | Posición entre 50.000 y 100.000 USDC |
+| Pez pequeño | Posición entre 10.000 y 50.000 USDC |
 
-Esta etiqueta sirve principalmente para juzgar el volumen de la billetera. A mayor volumen, mejor representa un comportamiento real de capital; en billeteras pequeñas, el porcentaje de ganancia puede amplificarse fácilmente por unas pocas operaciones.
+Esta etiqueta sirve principalmente para juzgar el volumen de la billetera. A mayor volumen, mejor suele representar un comportamiento real de capital; en billeteras pequeñas, el porcentaje de rentabilidad puede amplificarse fácilmente con unas pocas operaciones.
 
 ### Cómo se determinan las marcas de desempeño
 
 Las marcas de desempeño señalan cuentas con desempeño reciente destacado:
 
-| Icono | Etiqueta | Criterio |
-| --- | --- | --- |
-| <img src="/assets/smart-money/on-fire.svg" alt="Rey del win rate" width="18" /> | Rey del win rate | Win rate mayor al 80% y más de 60 operaciones en 30 días |
-| <img src="/assets/smart-money/shield.svg" alt="Crecimiento estable" width="18" /> | Crecimiento estable | Ganancias estables durante más de medio año y más de 30 operaciones en 30 días |
-| <img src="/assets/smart-money/lightning.svg" alt="Máquina de ganancias" width="18" /> | Máquina de ganancias | Win rate mayor al 60% y más de 300 operaciones en 30 días |
+| Etiqueta | Criterio |
+| --- | --- |
+| Rey del win rate | Win rate mayor al 80% y más de 60 operaciones abiertas en 30 días |
+| Crecimiento estable | Ganancias estables durante más de medio año y más de 30 operaciones abiertas en 30 días |
+| Máquina de ganancias | Win rate mayor al 60% y más de 300 operaciones abiertas en 30 días |
 
-Estas marcas solo indican que la billetera cumple con esos criterios de datos; no significan que vaya a seguir ganando. Para decidir si seguirla, también debes considerar la posición actual, el drawdown, el apalancamiento y los activos que opera.
+Estas marcas solo indican que la billetera cumple las condiciones de datos correspondientes; no garantizan que siga siendo rentable. Para decidir si copiarla, también revisa las posiciones actuales, la caída máxima, el apalancamiento y los activos operados.
