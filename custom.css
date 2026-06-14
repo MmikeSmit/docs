@@ -9,3 +9,16 @@ chat-assistant-floating-input,
 ai-chat-assistant {
   display: none !important;
 }
+
+/* Remove the remaining fixed assistant wrapper/border after the input is hidden. */
+div:has(> chat-assistant-floating-input),
+div:has(> ai-chat-assistant),
+div:has(> #chat-assistant-textarea),
+div[class*="fixed"][class*="bottom"]:has(chat-assistant-floating-input),
+div[class*="fixed"][class*="bottom"]:has(ai-chat-assistant),
+div[class*="fixed"][class*="bottom"]:has(#chat-assistant-textarea),
+div[class*="fixed"][class*="bottom"]:has(textarea) {
+  display: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
