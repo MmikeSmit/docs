@@ -12,56 +12,30 @@ export const Icon = ({ src, alt }) => (
 
 Wallet cards show system-generated profile tags beside the wallet avatar. These tags summarize the wallet's trading characteristics. They are not manual favorite labels; they are generated from wallet data.
 
-Common tags can be read in four groups:
+Use these tags for the first read: wallet scale, traded markets, directional bias, trading tempo, and whether recent performance stands out.
 
-### Account size
-
-Used to classify wallet scale by current position exposure.
-
-| Tag | Meaning | Criteria |
-| --- | --- | --- |
-| <Icon src="/assets/smart-money/whale.svg" alt="Whale" />Whale | Very large current position exposure. | Position exposure above 1,000,000 USDC |
-| <Icon src="/assets/smart-money/shark.svg" alt="Shark" />Shark | Large current position exposure. | Position exposure from 100,000 to 1,000,000 USDC |
-| <Icon src="/assets/smart-money/dolphin.svg" alt="Dolphin" />Dolphin | Medium current position exposure. | Position exposure from 50,000 to 100,000 USDC |
-| <Icon src="/assets/smart-money/fish.svg" alt="Fish" />Fish | Smaller current position exposure. | Position exposure from 10,000 to 50,000 USDC |
-
-### Market preference
-
-Used to identify what types of markets the wallet mainly trades.
-
-| Tag | Meaning |
-| --- | --- |
-| <Icon src="/assets/smart-money/majors.svg" alt="Majors" />Majors | More often trades BTC, ETH, and other major markets. |
-| <Icon src="/assets/smart-money/alts.svg" alt="Alts" />Alts | More often trades higher-volatility alternative markets. |
-| <Icon src="/assets/smart-money/tradfi.svg" alt="TradFi" />TradFi | More often trades traditional-finance-related markets. |
-| <Icon src="/assets/smart-money/mixed.svg" alt="Mixed" />Mixed | Trades across multiple market types without one dominant preference. |
-
-### Directional bias
-
-Used to show whether the wallet more often takes long, short, or balanced exposure.
-
-| Tag | Meaning |
-| --- | --- |
-| <Icon src="/assets/smart-money/long-biased.svg" alt="Long-biased" />Long-biased | More often holds long exposure. |
-| <Icon src="/assets/smart-money/short-biased.svg" alt="Short-biased" />Short-biased | More often holds short exposure. |
-| <Icon src="/assets/smart-money/hybrid.svg" alt="Balanced" />Balanced | Long and short exposure are relatively balanced. |
-
-### Holding period and performance markers
-
-Used to identify trading tempo and standout recent behavior.
-
-| Tag | Meaning | Criteria |
-| --- | --- | --- |
-| <Icon src="/assets/smart-money/trend.svg" alt="Scalping" />Scalping | More short-frequency trading. | Determined by holding period and trading tempo. |
-| <Icon src="/assets/smart-money/short-term.svg" alt="Short-term" />Short-term | More short holding periods. | Determined by holding period and trading tempo. |
-| <Icon src="/assets/smart-money/high-freq.svg" alt="Medium-term" />Medium-term | More medium holding periods. | Determined by holding period and trading tempo. |
-| <Icon src="/assets/smart-money/on-fire.svg" alt="Win-rate Hunter" />Win-rate Hunter | Standout win-rate behavior. | Win rate above 80% and more than 60 opened trades in the last 30 days |
-| <Icon src="/assets/smart-money/shield.svg" alt="Steady Compounder" />Steady Compounder | More stable long-period performance. | Profitable for more than six months and more than 30 opened trades in the last 30 days |
-| <Icon src="/assets/smart-money/lightning.svg" alt="Profit Machine" />Profit Machine | Standout activity and profitability. | Win rate above 60% and more than 300 opened trades in the last 30 days |
+| Tag category | Tag | Meaning | Criteria |
+| --- | --- | --- | --- |
+| Account size | <Icon src="/assets/smart-money/whale.svg" alt="Whale" />Whale | Very large current position exposure. | Position exposure above 1,000,000 USDC |
+| Account size | <Icon src="/assets/smart-money/shark.svg" alt="Shark" />Shark | Large current position exposure. | Position exposure from 100,000 to 1,000,000 USDC |
+| Account size | <Icon src="/assets/smart-money/dolphin.svg" alt="Dolphin" />Dolphin | Medium current position exposure. | Position exposure from 50,000 to 100,000 USDC |
+| Account size | <Icon src="/assets/smart-money/fish.svg" alt="Fish" />Fish | Smaller current position exposure. | Position exposure from 10,000 to 50,000 USDC |
+| Market preference | <Icon src="/assets/smart-money/majors.svg" alt="Majors" />Majors | More often trades BTC, ETH, and other major markets. | Based on the distribution of traded markets. |
+| Market preference | <Icon src="/assets/smart-money/alts.svg" alt="Alts" />Alts | More often trades higher-volatility alternative markets. | Based on the distribution of traded markets. |
+| Market preference | <Icon src="/assets/smart-money/tradfi.svg" alt="TradFi" />TradFi | More often trades traditional-finance-related markets. | Based on the distribution of traded markets. |
+| Market preference | <Icon src="/assets/smart-money/mixed.svg" alt="Mixed" />Mixed | Trades across multiple market types without one dominant preference. | Based on the distribution of traded markets. |
+| Directional bias | <Icon src="/assets/smart-money/long-biased.svg" alt="Long-biased" />Long-biased | More often holds long exposure. | Based on the long versus short exposure mix. |
+| Directional bias | <Icon src="/assets/smart-money/short-biased.svg" alt="Short-biased" />Short-biased | More often holds short exposure. | Based on the long versus short exposure mix. |
+| Directional bias | <Icon src="/assets/smart-money/hybrid.svg" alt="Balanced" />Balanced | Long and short exposure are relatively balanced. | Based on the long versus short exposure mix. |
+| Holding period | <Icon src="/assets/smart-money/trend.svg" alt="Scalping" />Scalping | More short-frequency trading. | Based on holding period and trading tempo. |
+| Holding period | <Icon src="/assets/smart-money/short-term.svg" alt="Short-term" />Short-term | More short holding periods. | Based on holding period and trading tempo. |
+| Holding period | <Icon src="/assets/smart-money/high-freq.svg" alt="Medium-term" />Medium-term | More medium holding periods. | Based on holding period and trading tempo. |
+| Performance marker | <Icon src="/assets/smart-money/on-fire.svg" alt="Win-rate Hunter" />Win-rate Hunter | Standout win-rate behavior. | Win rate above 80% and more than 60 opened trades in the last 30 days |
+| Performance marker | <Icon src="/assets/smart-money/shield.svg" alt="Steady Compounder" />Steady Compounder | More stable long-period performance. | Profitable for more than six months and more than 30 opened trades in the last 30 days |
+| Performance marker | <Icon src="/assets/smart-money/lightning.svg" alt="Profit Machine" />Profit Machine | Standout activity and profitability. | Win rate above 60% and more than 300 opened trades in the last 30 days |
 
 For example, **Balanced / Long-biased / Short-term** means the wallet is relatively balanced across long and short exposure overall, has recently leaned more long, and tends to trade on a shorter time frame. Use these tags to decide whether the wallet matches your copy trading preference before opening the details page.
 
-Account size helps estimate wallet scale. Larger wallets usually reflect more meaningful capital behavior. Smaller wallets can show inflated percentage returns from only a few trades.
-
-Performance markers only mean the wallet meets the data condition. They do not guarantee future profitability. Before following, also review current positions, drawdown, leverage, and traded markets.
-
+<Warning>
+Profile tags only mean the wallet meets the corresponding data condition. They do not guarantee future profitability. Before following, also review current positions, drawdown, leverage, and traded markets.
+</Warning>
