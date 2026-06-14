@@ -4,6 +4,10 @@ description: "查看钱包持仓、历史交易和风险表现。"
 mode: "wide"
 ---
 
+export const Icon = ({ src, alt }) => (
+  <img src={src} alt={alt} style={{ width: 18, height: 18, display: 'inline-block', verticalAlign: 'middle', marginRight: 6 }} />
+);
+
 钱包详情页是判断一个钱包是否值得继续观察的地方。聪明钱帮你找到候选钱包，详情页则帮你判断它到底是不是适合跟随的钱包。
 
 ## 先看它怎么赚钱
@@ -32,18 +36,18 @@ mode: "wide"
 
 | 标签 | 判断标准 |
 | --- | --- |
-| 鲸鱼 | 持仓大于 100 万 USDC |
-| 鲨鱼 | 持仓 10 万到 100 万 USDC |
-| 海豚 | 持仓 5 万到 10 万 USDC |
-| 小鱼 | 持仓 1 万到 5 万 USDC |
+| <Icon src="/assets/smart-money/whale.svg" alt="鲸鱼" />鲸鱼 | 持仓大于 100 万 USDC |
+| <Icon src="/assets/smart-money/shark.svg" alt="鲨鱼" />鲨鱼 | 持仓 10 万到 100 万 USDC |
+| <Icon src="/assets/smart-money/dolphin.svg" alt="海豚" />海豚 | 持仓 5 万到 10 万 USDC |
+| <Icon src="/assets/smart-money/fish.svg" alt="小鱼" />小鱼 | 持仓 1 万到 5 万 USDC |
 
 表现标记的判断标准：
 
 | 标签 | 判断标准 |
 | --- | --- |
-| 胜率狂人 | 胜率大于 80%，且 30 日开单数大于 60 |
-| 稳定增值 | 半年以上稳定盈利，且 30 日开单数大于 30 |
-| 赚钱机器 | 胜率大于 60%，且 30 日开单数大于 300 |
+| <Icon src="/assets/smart-money/on-fire.svg" alt="胜率狂人" />胜率狂人 | 胜率大于 80%，且 30 日开单数大于 60 |
+| <Icon src="/assets/smart-money/shield.svg" alt="稳定增值" />稳定增值 | 半年以上稳定盈利，且 30 日开单数大于 30 |
+| <Icon src="/assets/smart-money/lightning.svg" alt="赚钱机器" />赚钱机器 | 胜率大于 60%，且 30 日开单数大于 300 |
 
 这些标签适合做快速判断，但不能替代详情数据。真正决定是否跟随时，还需要结合当前持仓、历史交易、回撤和杠杆一起看。
 
