@@ -27,6 +27,10 @@
                 "group": "聪明钱发现",
                 "pages": [
                   "cn/smart-money",
+                  "cn/smart-money-tags",
+                  "cn/smart-money-ratings",
+                  "cn/smart-money-screening",
+                  "cn/smart-money-evaluation",
                   "cn/wallet-details"
                 ]
               },
