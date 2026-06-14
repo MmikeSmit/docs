@@ -9,12 +9,90 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "pages": [
+    "languages": [
       {
-        "group": "Getting Started",
+        "language": "en",
+        "default": true,
         "pages": [
-          "index",
-          "quickstart"
+          {
+            "group": "Getting Started",
+            "pages": [
+              "index",
+              "quickstart"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "cn",
+        "pages": [
+          {
+            "group": "入门",
+            "pages": [
+              "cn/index",
+              "cn/quickstart"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "zh-Hant",
+        "pages": [
+          {
+            "group": "開始使用",
+            "pages": [
+              "zh-Hant/index",
+              "zh-Hant/quickstart"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "jp",
+        "pages": [
+          {
+            "group": "はじめに",
+            "pages": [
+              "jp/index",
+              "jp/quickstart"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "ko",
+        "pages": [
+          {
+            "group": "시작하기",
+            "pages": [
+              "ko/index",
+              "ko/quickstart"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "es",
+        "pages": [
+          {
+            "group": "Primeros pasos",
+            "pages": [
+              "es/index",
+              "es/quickstart"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "vi",
+        "pages": [
+          {
+            "group": "Bắt đầu",
+            "pages": [
+              "vi/index",
+              "vi/quickstart"
+            ]
+          }
         ]
       }
     ],
