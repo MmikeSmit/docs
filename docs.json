@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "SeaBond",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#9950FF",
+    "light": "#B27AFF",
+    "dark": "#7C3AED"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -374,8 +374,8 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/seabond.png",
+    "dark": "/logo/seabond.png"
   },
   "navbar": {
     "links": []
