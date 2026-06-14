@@ -1,0 +1,41 @@
+---
+title: "Cách tính vị thế"
+description: "Tìm hiểu logic quy đổi vị thế copy trade theo tỷ lệ."
+mode: "wide"
+---
+
+Copy trade của SeaBond không sao chép 1:1 theo số tiền tuyệt đối của ví mục tiêu, mà thực hiện theo tỷ lệ.
+
+Khi trader mở vị thế, hệ thống sẽ tính trước tỷ lệ chi phí mở vị thế này trên tổng số dư tài khoản của trader, sau đó dùng tỷ lệ tương tự để quy đổi sang tài khoản copy trade của bạn.
+
+## Ví dụ
+
+| Mục | Ví dụ |
+| --- | --- |
+| Tổng số dư tài khoản của trader | 10.000 USDC |
+| Chi phí mở vị thế lần này của trader | 1.000 USDC |
+| Tỷ lệ chi phí mở vị thế | 10% |
+| Tổng đầu tư tài khoản copy trade của bạn | 500 USDC |
+| Số tiền tương ứng tài khoản copy trade của bạn | Khoảng 50 USDC |
+
+Nói cách khác, copy trade quan tâm đến "tỷ lệ của giao dịch này trên tài khoản", không phải đến số tiền tuyệt đối mà ví mục tiêu đã dùng. Như vậy, các ví có vốn lớn và tài khoản copy trade có vốn nhỏ vẫn có thể duy trì cấu trúc vị thế tương đối gần nhau.
+
+## Vai trò của tổng đầu tư
+
+**Tổng đầu tư** mà bạn điền khi tạo copy trade sẽ là cơ sở vốn ban đầu cho tài khoản copy trade đó. Các lệnh copy trade sau này sẽ được thực hiện theo tỷ lệ xoay quanh quy mô vốn của tài khoản copy trade này.
+
+Nếu bạn đầu tư 500 USDC, hệ thống sẽ không vì trader đã mở vị thế 10.000 USDC mà cũng cho bạn mở 10.000 USDC, mà sẽ quy đổi theo tỷ lệ vị thế của trader vào tài khoản copy trade 500 USDC của bạn.
+
+## Xử lý vị thế nhỏ
+
+Sàn giao dịch thường có yêu cầu giá trị danh nghĩa đặt lệnh tối thiểu. Nếu vị thế mục tiêu sau khi tính theo tỷ lệ thấp hơn giá trị danh nghĩa tối thiểu, hệ thống có thể thực hiện theo giá trị danh nghĩa tối thiểu để đảm bảo lệnh có thể khớp.
+
+<Warning>
+Nếu quy mô vốn copy trade của bạn nhỏ hơn nhiều so với tài khoản của trader, một số vị thế tỷ lệ nhỏ có thể không hoàn toàn giống với kết quả của trader do giá trị danh nghĩa đặt lệnh tối thiểu, trượt giá hoặc khác biệt giá khớp.
+</Warning>
+
+## Những tham số nào do hệ thống xử lý
+
+Khi tạo copy trade, bạn chỉ cần chọn ví trader, chế độ copy trade và tổng đầu tư. Các tham số thực thi như chế độ đòn bẩy, cách quy đổi vị thế, có đi theo mở/đóng vị thế hay không đều do hệ thống xử lý thống nhất, trang sẽ không yêu cầu bạn cấu hình thủ công.
+
+Mục đích của việc này là giữ cho quy tắc copy trade nhất quán: bạn chủ yếu kiểm soát "đi theo ai, dùng bao nhiêu vốn, dùng phương thức đồng bộ nào", còn việc thực thi lệnh cụ thể do hệ thống hoàn thành theo quy tắc.

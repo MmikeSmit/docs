@@ -1,0 +1,33 @@
+---
+title: "Chế độ copy trade"
+description: "Tìm hiểu sao chép thông minh và sao chép tức thì."
+mode: "wide"
+---
+
+Hiện tại SeaBond cung cấp hai chế độ copy trade.
+
+## Sao chép thông minh
+
+Sao chép thông minh là chế độ mặc định. Nó cũng thực hiện theo tỷ lệ chi phí mở vị thế của trader trên tổng số dư tài khoản, nhưng sẽ thận trọng hơn khi đồng bộ các vị thế hiện có của ví mục tiêu.
+
+Nếu ví mục tiêu đã có vị thế, sao chép thông minh sẽ xử lý việc đồng bộ một cách thận trọng hơn. Khi lãi/lỗ chưa thực hiện của vị thế hiện tại vượt quá 10%, hệ thống sẽ bỏ qua vị thế đó và chờ giao dịch tiếp theo.
+
+Phù hợp với:
+
+- Người dùng lần đầu đi theo một ví nào đó
+- Người dùng muốn giảm rủi ro vào sau các vị thế đã có
+- Người dùng quan tâm đến chất lượng đồng bộ hơn là việc đi theo ngay tất cả vị thế hiện tại
+
+## Sao chép tức thì
+
+Sao chép tức thì sẽ thực hiện lệnh trực tiếp hơn theo vị thế và tỷ lệ vốn của trader. Nó phù hợp với tình huống muốn nhanh chóng đi theo các động thái giao dịch hiện tại của ví mục tiêu.
+
+Phù hợp với:
+
+- Người dùng đã hiểu rõ phong cách giao dịch của ví mục tiêu
+- Người dùng muốn đi theo các động thái giao dịch của mục tiêu nhanh hơn
+- Người dùng có thể chấp nhận sự khác biệt giữa giá thị trường hiện tại và giá vào lệnh của ví mục tiêu
+
+<Warning>
+Nếu ví mục tiêu đã có vị thế với mức lãi chưa thực hiện lớn, sao chép tức thì có thể khiến bạn vào lệnh ở vị trí xấu hơn. Trước khi tạo, hãy xem vị thế hiện tại của ví mục tiêu trước.
+</Warning>
