@@ -32,25 +32,17 @@ export const Icon = ({ src, alt }) => (
 - **交易週期**：判斷它偏超短線、短線，還是中長線。
 - **表現標記**：提示勝率、穩定性或交易活躍度較突出的特徵。
 
-帳戶規模標籤的判斷標準：
+常用畫像標籤判斷標準：
 
-| 標籤 | 判斷標準 |
-| --- | --- |
-| 標籤 | 判斷標準 |
-| 鯨魚 <Icon src="/assets/smart-money/whale.svg" alt="鯨魚" />鯨魚 | 持倉大於 100 萬 USDC |
-| 鯊魚 <Icon src="/assets/smart-money/shark.svg" alt="鯊魚" />鯊魚 | 持倉 10 萬到 100 萬 USDC |
-| 海豚 <Icon src="/assets/smart-money/dolphin.svg" alt="海豚" />海豚 | 持倉 5 萬到 10 萬 USDC |
-| 小魚 <Icon src="/assets/smart-money/fish.svg" alt="小魚" />小魚 | 持倉 1 萬到 5 萬 USDC |
-
-表現標記的判斷標準：
-
-| 圖示 | 標籤 | 判斷標準 |  |
+| 標籤類型 | 標籤 | 含義 | 判斷標準 |
 | --- | --- | --- | --- |
-| 標籤 | 判斷標準 |
-| 標籤 | 判斷標準 |
-| 勝率狂人 | 勝率大於 80%，且 30 日開單數大於 60 | <Icon src="/assets/smart-money/on-fire.svg" alt="勝率狂人" />勝率狂人 |
-| 穩定增值 | 半年以上穩定盈利，且 30 日開單數大於 30 | <Icon src="/assets/smart-money/shield.svg" alt="穩定增值" />穩定增值 |
-| 賺錢機器 | 勝率大於 60%，且 30 日開單數大於 300 | <Icon src="/assets/smart-money/lightning.svg" alt="賺錢機器" />賺錢機器 |
+| 帳戶規模 | <Icon src="/assets/smart-money/whale.svg" alt="鯨魚" />鯨魚 | 目前持倉規模很大的錢包。 | 持倉大於 100 萬 USDC |
+| 帳戶規模 | <Icon src="/assets/smart-money/shark.svg" alt="鯊魚" />鯊魚 | 目前持倉規模較大的錢包。 | 持倉 10 萬到 100 萬 USDC |
+| 帳戶規模 | <Icon src="/assets/smart-money/dolphin.svg" alt="海豚" />海豚 | 目前持倉規模中等的錢包。 | 持倉 5 萬到 10 萬 USDC |
+| 帳戶規模 | <Icon src="/assets/smart-money/fish.svg" alt="小魚" />小魚 | 目前持倉規模較小的錢包。 | 持倉 1 萬到 5 萬 USDC |
+| 表現標記 | <Icon src="/assets/smart-money/on-fire.svg" alt="勝率狂人" />勝率狂人 | 勝率表現突出。 | 勝率大於 80%，且 30 日開單數大於 60 |
+| 表現標記 | <Icon src="/assets/smart-money/shield.svg" alt="穩定增值" />穩定增值 | 長週期表現更穩定。 | 半年以上穩定盈利，且 30 日開單數大於 30 |
+| 表現標記 | <Icon src="/assets/smart-money/lightning.svg" alt="賺錢機器" />賺錢機器 | 交易活躍度和收益表現較突出。 | 勝率大於 60%，且 30 日開單數大於 300 |
 
 這些標籤適合做快速判斷，但不能取代詳情資料。真正決定是否跟隨時，還需要結合目前持倉、歷史交易、回撤和槓桿一起看。
 
