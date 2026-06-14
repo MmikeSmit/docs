@@ -1,0 +1,58 @@
+---
+title: "지갑 프로필 라벨"
+description: "지갑 카드에 표시되는 시스템 라벨과 그 판단 기준을 설명합니다."
+mode: "wide"
+---
+
+## 지갑 프로필 라벨
+
+지갑 카드의 프로필 사진 옆에는 시스템 라벨 묶음이 표시되며, 이 지갑의 거래 특징을 빠르게 요약합니다. 사용자가 수동으로 추가한 즐겨찾기 라벨이 아니라, 지갑 데이터를 기반으로 생성된 프로필입니다.
+
+흔히 볼 수 있는 라벨:
+
+| 라벨 유형 | 아이콘 | 라벨 | 의미 |
+| --- | --- | --- | --- |
+| 계정 규모 | <img src="/assets/smart-money/whale.svg" alt="고래" width="18" /> | 고래 | 현재 포지션 규모로 지갑 체급을 구분합니다. |
+| 계정 규모 | <img src="/assets/smart-money/shark.svg" alt="상어" width="18" /> | 상어 | 현재 포지션 규모로 지갑 체급을 구분합니다. |
+| 계정 규모 | <img src="/assets/smart-money/dolphin.svg" alt="돌고래" width="18" /> | 돌고래 | 현재 포지션 규모로 지갑 체급을 구분합니다. |
+| 계정 규모 | <img src="/assets/smart-money/fish.svg" alt="피라미" width="18" /> | 피라미 | 현재 포지션 규모로 지갑 체급을 구분합니다. |
+| 코인 선호 | <img src="/assets/smart-money/majors.svg" alt="메이저 코인" width="18" /> | 메이저 코인 | 지갑이 주로 어떤 유형의 종목을 거래하는지 판단합니다. |
+| 코인 선호 | <img src="/assets/smart-money/alts.svg" alt="알트코인" width="18" /> | 알트코인 | 지갑이 주로 어떤 유형의 종목을 거래하는지 판단합니다. |
+| 코인 선호 | <img src="/assets/smart-money/tradfi.svg" alt="TradFi" width="18" /> | TradFi | 지갑이 주로 어떤 유형의 종목을 거래하는지 판단합니다. |
+| 코인 선호 | <img src="/assets/smart-money/mixed.svg" alt="종합" width="18" /> | 종합 | 지갑이 주로 어떤 유형의 종목을 거래하는지 판단합니다. |
+| 방향 선호 | <img src="/assets/smart-money/long-biased.svg" alt="롱 편향" width="18" /> | 롱 편향 | 지갑이 더 자주 롱, 숏 또는 롱숏이 비교적 균형 잡혀 있는지 판단합니다. |
+| 방향 선호 | <img src="/assets/smart-money/short-biased.svg" alt="숏 편향" width="18" /> | 숏 편향 | 지갑이 더 자주 롱, 숏 또는 롱숏이 비교적 균형 잡혀 있는지 판단합니다. |
+| 방향 선호 | <img src="/assets/smart-money/hybrid.svg" alt="균형형" width="18" /> | 균형형 | 지갑이 더 자주 롱, 숏 또는 롱숏이 비교적 균형 잡혀 있는지 판단합니다. |
+| 거래 주기 | <img src="/assets/smart-money/trend.svg" alt="초단기" width="18" /> | 초단기 | 지갑이 단기 빈도 거래를 선호하는지, 더 긴 주기로 포지션을 보유하는지 판단합니다. |
+| 거래 주기 | <img src="/assets/smart-money/short-term.svg" alt="단기" width="18" /> | 단기 | 지갑이 단기 빈도 거래를 선호하는지, 더 긴 주기로 포지션을 보유하는지 판단합니다. |
+| 거래 주기 | <img src="/assets/smart-money/high-freq.svg" alt="중장기" width="18" /> | 중장기 | 지갑이 단기 빈도 거래를 선호하는지, 더 긴 주기로 포지션을 보유하는지 판단합니다. |
+| 성과 표시 | <img src="/assets/smart-money/on-fire.svg" alt="승률 강자" width="18" /> | 승률 강자 | 승률, 안정성 또는 거래 활성도가 두드러진 지갑을 표시합니다. |
+| 성과 표시 | <img src="/assets/smart-money/shield.svg" alt="안정 증식" width="18" /> | 안정 증식 | 승률, 안정성 또는 거래 활성도가 두드러진 지갑을 표시합니다. |
+| 성과 표시 | <img src="/assets/smart-money/lightning.svg" alt="수익 머신" width="18" /> | 수익 머신 | 승률, 안정성 또는 거래 활성도가 두드러진 지갑을 표시합니다. |
+
+예를 들어 스크린샷의 **균형형 / 롱 편향 / 단기**는 이 지갑이 프로필상 롱숏 분포가 비교적 균형 잡혀 있고, 최근 방향은 롱 쪽으로 더 기울어 있으며, 거래 리듬이 단기적이라는 것을 나타냅니다. 사용자는 먼저 이러한 라벨로 자신의 카피 트레이딩 선호에 맞는지 판단한 뒤, 상세 페이지에서 포지션과 거래 이력을 확인할 수 있습니다.
+
+### 계정 규모를 어떻게 판단하나요
+
+계정 규모는 현재 포지션 금액에 따라 구분됩니다:
+
+| 아이콘 | 라벨 | 판단 기준 |
+| --- | --- | --- |
+| <img src="/assets/smart-money/whale.svg" alt="고래" width="18" /> | 고래 | 포지션 100만 USDC 초과 |
+| <img src="/assets/smart-money/shark.svg" alt="상어" width="18" /> | 상어 | 포지션 10만 ~ 100만 USDC |
+| <img src="/assets/smart-money/dolphin.svg" alt="돌고래" width="18" /> | 돌고래 | 포지션 5만 ~ 10만 USDC |
+| <img src="/assets/smart-money/fish.svg" alt="피라미" width="18" /> | 피라미 | 포지션 1만 ~ 5만 USDC |
+
+이 라벨은 주로 지갑 체급을 판단하는 데 사용됩니다. 체급이 클수록 보통 실제 자금의 행동을 잘 대변하며, 체급이 작은 지갑은 수익률이 소수의 거래에 의해 쉽게 확대될 수 있습니다.
+
+### 성과 표시를 어떻게 판단하나요
+
+성과 표시는 최근 거래 성과가 비교적 두드러진 계정을 나타냅니다:
+
+| 아이콘 | 라벨 | 판단 기준 |
+| --- | --- | --- |
+| <img src="/assets/smart-money/on-fire.svg" alt="승률 강자" width="18" /> | 승률 강자 | 승률 80% 초과, 30일 진입 횟수 60회 초과 |
+| <img src="/assets/smart-money/shield.svg" alt="안정 증식" width="18" /> | 안정 증식 | 반년 이상 안정적 수익, 30일 진입 횟수 30회 초과 |
+| <img src="/assets/smart-money/lightning.svg" alt="수익 머신" width="18" /> | 수익 머신 | 승률 60% 초과, 30일 진입 횟수 300회 초과 |
+
+이러한 표시는 지갑이 해당 데이터 조건을 충족함을 나타낼 뿐이며, 향후에도 반드시 수익이 이어진다는 의미는 아닙니다. 따라갈지 판단할 때는 현재 포지션, 낙폭, 레버리지, 거래 코인을 함께 살펴보아야 합니다.
