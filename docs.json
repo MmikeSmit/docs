@@ -75,7 +75,16 @@
           {
             "group": "使用教學",
             "pages": [
-              "zh-Hant/smart-money",
+              {
+                "group": "聰明錢發現",
+                "pages": [
+                  "zh-Hant/smart-money",
+                  "zh-Hant/smart-money-tags",
+                  "zh-Hant/smart-money-ratings",
+                  "zh-Hant/smart-money-screening",
+                  "zh-Hant/smart-money-evaluation"
+                ]
+              },
               "zh-Hant/wallet-details",
               {
                 "group": "跟單",
@@ -117,7 +126,16 @@
           {
             "group": "使い方ガイド",
             "pages": [
-              "jp/smart-money",
+              {
+                "group": "スマートマネー発見",
+                "pages": [
+                  "jp/smart-money",
+                  "jp/smart-money-tags",
+                  "jp/smart-money-ratings",
+                  "jp/smart-money-screening",
+                  "jp/smart-money-evaluation"
+                ]
+              },
               "jp/wallet-details",
               {
                 "group": "コピートレード",
@@ -159,7 +177,16 @@
           {
             "group": "사용 가이드",
             "pages": [
-              "ko/smart-money",
+              {
+                "group": "스마트 머니 발견",
+                "pages": [
+                  "ko/smart-money",
+                  "ko/smart-money-tags",
+                  "ko/smart-money-ratings",
+                  "ko/smart-money-screening",
+                  "ko/smart-money-evaluation"
+                ]
+              },
               "ko/wallet-details",
               {
                 "group": "카피 트레이딩",
@@ -201,7 +228,16 @@
           {
             "group": "Guías de uso",
             "pages": [
-              "es/smart-money",
+              {
+                "group": "Descubrimiento de smart money",
+                "pages": [
+                  "es/smart-money",
+                  "es/smart-money-tags",
+                  "es/smart-money-ratings",
+                  "es/smart-money-screening",
+                  "es/smart-money-evaluation"
+                ]
+              },
               "es/wallet-details",
               {
                 "group": "Copy trading",
@@ -243,7 +279,16 @@
           {
             "group": "Hướng dẫn sử dụng",
             "pages": [
-              "vi/smart-money",
+              {
+                "group": "Khám phá smart money",
+                "pages": [
+                  "vi/smart-money",
+                  "vi/smart-money-tags",
+                  "vi/smart-money-ratings",
+                  "vi/smart-money-screening",
+                  "vi/smart-money-evaluation"
+                ]
+              },
               "vi/wallet-details",
               {
                 "group": "Copy trade",
