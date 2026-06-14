@@ -23,8 +23,13 @@
           {
             "group": "使用教程",
             "pages": [
-              "cn/smart-money",
-              "cn/wallet-details",
+              {
+                "group": "聪明钱发现",
+                "pages": [
+                  "cn/smart-money",
+                  "cn/wallet-details"
+                ]
+              },
               {
                 "group": "跟单",
                 "pages": [
