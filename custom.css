@@ -1,0 +1,11 @@
+/* Hide Mintlify default search and AI assistant entry points. */
+#search-bar-entry,
+#search-bar-entry-mobile,
+#assistant-entry,
+#assistant-entry-mobile,
+chat-assistant-floating-input,
+#chat-assistant-sheet,
+#chat-assistant-textarea,
+ai-chat-assistant {
+  display: none !important;
+}
