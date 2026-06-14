@@ -67,6 +67,41 @@
               "zh-Hant/index",
               "zh-Hant/quickstart"
             ]
+          },
+          {
+            "group": "使用教學",
+            "pages": [
+              {
+                "group": "聰明錢發現",
+                "pages": [
+                  "zh-Hant/smart-money",
+                  "zh-Hant/wallet-details"
+                ]
+              },
+              {
+                "group": "跟單",
+                "pages": [
+                  "zh-Hant/copy-trading",
+                  "zh-Hant/copy-trading-create",
+                  "zh-Hant/copy-trading-sizing",
+                  "zh-Hant/copy-trading-modes",
+                  "zh-Hant/copy-trading-investment",
+                  "zh-Hant/copy-trading-troubleshooting",
+                  "zh-Hant/copy-trading-management",
+                  "zh-Hant/copy-trading-performance"
+                ]
+              },
+              "zh-Hant/profile",
+              "zh-Hant/favorites-labels"
+            ]
+          },
+          {
+            "group": "帳戶與獎勵",
+            "pages": [
+              "zh-Hant/invite-points",
+              "zh-Hant/risk-disclaimer",
+              "zh-Hant/faq"
+            ]
           }
         ]
       },
@@ -78,6 +113,41 @@
             "pages": [
               "jp/index",
               "jp/quickstart"
+            ]
+          },
+          {
+            "group": "使い方ガイド",
+            "pages": [
+              {
+                "group": "スマートマネー発見",
+                "pages": [
+                  "jp/smart-money",
+                  "jp/wallet-details"
+                ]
+              },
+              {
+                "group": "コピートレード",
+                "pages": [
+                  "jp/copy-trading",
+                  "jp/copy-trading-create",
+                  "jp/copy-trading-sizing",
+                  "jp/copy-trading-modes",
+                  "jp/copy-trading-investment",
+                  "jp/copy-trading-troubleshooting",
+                  "jp/copy-trading-management",
+                  "jp/copy-trading-performance"
+                ]
+              },
+              "jp/profile",
+              "jp/favorites-labels"
+            ]
+          },
+          {
+            "group": "アカウントと報酬",
+            "pages": [
+              "jp/invite-points",
+              "jp/risk-disclaimer",
+              "jp/faq"
             ]
           }
         ]
@@ -91,6 +161,41 @@
               "ko/index",
               "ko/quickstart"
             ]
+          },
+          {
+            "group": "사용 가이드",
+            "pages": [
+              {
+                "group": "스마트 머니 발견",
+                "pages": [
+                  "ko/smart-money",
+                  "ko/wallet-details"
+                ]
+              },
+              {
+                "group": "카피 트레이딩",
+                "pages": [
+                  "ko/copy-trading",
+                  "ko/copy-trading-create",
+                  "ko/copy-trading-sizing",
+                  "ko/copy-trading-modes",
+                  "ko/copy-trading-investment",
+                  "ko/copy-trading-troubleshooting",
+                  "ko/copy-trading-management",
+                  "ko/copy-trading-performance"
+                ]
+              },
+              "ko/profile",
+              "ko/favorites-labels"
+            ]
+          },
+          {
+            "group": "계정 및 리워드",
+            "pages": [
+              "ko/invite-points",
+              "ko/risk-disclaimer",
+              "ko/faq"
+            ]
           }
         ]
       },
@@ -103,6 +208,41 @@
               "es/index",
               "es/quickstart"
             ]
+          },
+          {
+            "group": "Guías de uso",
+            "pages": [
+              {
+                "group": "Descubrir Smart Money",
+                "pages": [
+                  "es/smart-money",
+                  "es/wallet-details"
+                ]
+              },
+              {
+                "group": "Copy trading",
+                "pages": [
+                  "es/copy-trading",
+                  "es/copy-trading-create",
+                  "es/copy-trading-sizing",
+                  "es/copy-trading-modes",
+                  "es/copy-trading-investment",
+                  "es/copy-trading-troubleshooting",
+                  "es/copy-trading-management",
+                  "es/copy-trading-performance"
+                ]
+              },
+              "es/profile",
+              "es/favorites-labels"
+            ]
+          },
+          {
+            "group": "Cuenta y recompensas",
+            "pages": [
+              "es/invite-points",
+              "es/risk-disclaimer",
+              "es/faq"
+            ]
           }
         ]
       },
@@ -114,6 +254,41 @@
             "pages": [
               "vi/index",
               "vi/quickstart"
+            ]
+          },
+          {
+            "group": "Hướng dẫn sử dụng",
+            "pages": [
+              {
+                "group": "Khám phá Smart Money",
+                "pages": [
+                  "vi/smart-money",
+                  "vi/wallet-details"
+                ]
+              },
+              {
+                "group": "Copy trading",
+                "pages": [
+                  "vi/copy-trading",
+                  "vi/copy-trading-create",
+                  "vi/copy-trading-sizing",
+                  "vi/copy-trading-modes",
+                  "vi/copy-trading-investment",
+                  "vi/copy-trading-troubleshooting",
+                  "vi/copy-trading-management",
+                  "vi/copy-trading-performance"
+                ]
+              },
+              "vi/profile",
+              "vi/favorites-labels"
+            ]
+          },
+          {
+            "group": "Tài khoản và phần thưởng",
+            "pages": [
+              "vi/invite-points",
+              "vi/risk-disclaimer",
+              "vi/faq"
             ]
           }
         ]

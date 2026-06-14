@@ -1,0 +1,41 @@
+---
+title: "Cách tính vị thế"
+description: "Hiểu logic quy đổi vị thế copy theo tỷ lệ."
+mode: "wide"
+---
+
+Copy trading trong SeaBond không sao chép 1:1 theo giá trị tuyệt đối vị thế của ví mục tiêu, mà thực thi theo tỷ lệ.
+
+Khi trader mở vị thế, hệ thống sẽ tính tỷ lệ chi phí mở vị thế lần này so với tổng số dư tài khoản của trader, sau đó dùng cùng tỷ lệ đó quy đổi sang tài khoản copy của bạn.
+
+## Ví dụ
+
+| Mục | Ví dụ |
+| --- | --- |
+| Tổng số dư tài khoản trader | 10.000 USDC |
+| Chi phí mở vị thế lần này của trader | 1.000 USDC |
+| Tỷ lệ chi phí mở vị thế | 10% |
+| Tổng đầu tư của tài khoản copy của bạn | 500 USDC |
+| Số tiền tương ứng trong tài khoản copy của bạn | Khoảng 50 USDC |
+
+Nói cách khác, copy trading quan tâm đến "tỷ lệ của giao dịch này so với tài khoản", chứ không phải giá trị tuyệt đối mà ví mục tiêu đã dùng. Như vậy ví vốn lớn và tài khoản copy vốn nhỏ vẫn có thể giữ cấu trúc vị thế tương đối gần nhau.
+
+## Vai trò của tổng đầu tư
+
+**Tổng đầu tư** bạn nhập khi tạo copy sẽ là vốn ban đầu của tài khoản copy này. Các lệnh copy sau đó sẽ được thực thi theo tỷ lệ dựa trên quy mô vốn của tài khoản copy này.
+
+Nếu bạn đầu tư 500 USDC, hệ thống sẽ không vì trader mở vị thế 10.000 USDC mà cũng cho bạn mở 10.000 USDC, mà sẽ quy đổi theo tỷ lệ vị thế của trader sang tài khoản copy 500 USDC của bạn.
+
+## Xử lý vị thế nhỏ
+
+Sàn giao dịch thường có yêu cầu giá trị danh nghĩa tối thiểu cho mỗi lệnh. Nếu vị thế mục tiêu sau khi tính theo tỷ lệ thấp hơn giá trị danh nghĩa tối thiểu, hệ thống có thể thực thi theo giá trị tối thiểu đó để đảm bảo lệnh được khớp.
+
+<Warning>
+Nếu quy mô vốn copy của bạn nhỏ hơn nhiều so với tài khoản trader, một số vị thế tỷ lệ nhỏ có thể không hoàn toàn giống kết quả của trader do giá trị danh nghĩa tối thiểu, trượt giá hoặc chênh lệch giá khớp.
+</Warning>
+
+## Những tham số nào do hệ thống xử lý
+
+Khi tạo copy, bạn chỉ cần chọn ví trader, chế độ copy và tổng đầu tư. Các tham số thực thi như chế độ đòn bẩy, cách quy đổi vị thế, có đi theo mở/đóng vị thế hay không được hệ thống xử lý thống nhất, trang sẽ không yêu cầu bạn cấu hình thủ công.
+
+Mục đích là giữ cho quy tắc copy nhất quán: người dùng chủ yếu kiểm soát "đi theo ai, dùng bao nhiêu vốn, dùng cách đồng bộ nào", còn việc thực thi lệnh cụ thể do hệ thống hoàn thành theo quy tắc.

@@ -1,0 +1,41 @@
+---
+title: "Cómo se calcula la posición"
+description: "Lógica de conversión proporcional de la posición en el copy trading."
+mode: "wide"
+---
+
+El copy trading de SeaBond no copia 1:1 el monto absoluto de la posición del trader objetivo, sino que se ejecuta de forma proporcional.
+
+Cuando el trader líder abre una posición, el sistema calcula primero qué proporción del saldo total de su cuenta representa el coste de esa apertura y, después, aplica esa misma proporción a tu cuenta de copy trading.
+
+## Ejemplo
+
+| Concepto | Ejemplo |
+| --- | --- |
+| Saldo total de la cuenta del trader líder | 10.000 USDC |
+| Coste de apertura del trader líder | 1.000 USDC |
+| Proporción del coste de apertura | 10% |
+| Inversión total de tu cuenta de copy trading | 500 USDC |
+| Inversión equivalente en tu cuenta | Aprox. 50 USDC |
+
+Dicho de otra forma, el copy trading se fija en "qué proporción de la cuenta representa esta operación", no en cuánto dinero absoluto ha usado la cartera objetivo. Así, las carteras grandes y las cuentas de copy trading pequeñas pueden mantener una estructura de posiciones relativamente similar.
+
+## Función de la inversión total
+
+La **inversión total** que indicas al crear el copy trading se toma como base de capital inicial de esa cuenta de copy trading. Las órdenes posteriores se ejecutan proporcionalmente respecto al tamaño de esa cuenta.
+
+Si inviertes 500 USDC, el sistema no abrirá una posición de 10.000 USDC porque el trader líder lo haya hecho; aplicará su proporción de posición a tu cuenta de copy trading de 500 USDC.
+
+## Tratamiento de posiciones pequeñas
+
+Los exchanges suelen exigir un mínimo nocional por orden. Si la posición objetivo calculada proporcionalmente está por debajo de ese mínimo, el sistema puede ejecutarla con ese mínimo nocional para asegurar que la orden se ejecute.
+
+<Warning>
+Si tu capital de copy trading es mucho menor que el de la cartera del trader líder, algunas posiciones de proporción pequeña pueden no coincidir exactamente con su resultado por el mínimo nocional, el slippage o las diferencias en el precio de ejecución.
+</Warning>
+
+## Qué parámetros gestiona el sistema
+
+Al crear un copy trading, el usuario solo elige la cartera del trader líder, el modo de copy trading y la inversión total. El modo de apalancamiento, la forma de convertir la posición, si se siguen aperturas y cierres y otros parámetros de ejecución los gestiona el sistema de forma unificada; la página no pide configurarlos manualmente.
+
+El objetivo es mantener consistentes las reglas de copy trading: el usuario controla "a quién copiar, con cuánto capital y con qué modo de sincronización", y la ejecución concreta de las órdenes la realiza el sistema según las reglas establecidas.
