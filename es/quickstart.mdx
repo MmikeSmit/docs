@@ -1,47 +1,78 @@
 ---
 title: "Inicio rápido"
-description: "Comienza con una guía sobre el camino más rápido hacia un resultado exitoso"
+description: "Flujo completo para usar SeaBond por primera vez."
+mode: "wide"
 ---
 
-Describe cómo alguien empieza a usar tu producto. ¿Qué es lo primero que debe hacer? ¿Hay algún requisito previo?
+Esta página describe cómo completar un flujo integral la primera vez que uses SeaBond: descubrir billeteras, ver detalles, agregarlas a favoritos, crear copy trading y volver al perfil para revisar los resultados.
 
-Un inicio rápido debe llevar a alguien desde cero hasta usar tu producto. Conseguirán un logro rápido y una idea de lo que pueden lograr.
+## Qué hacer la primera vez
 
-## Requisitos previos
+### 1. Iniciar sesión
 
-Antes de empezar, debes tener:
+Solo después de iniciar sesión SeaBond puede guardar tus favoritos, etiquetas, relaciones de invitación, perfil y reglas de copy trading.
 
-- Requisito uno (por ejemplo, Node.js 18+, una cuenta gratuita, una clave API)
-- Requisito dos (por ejemplo, un dispositivo compatible, un navegador compatible, un sistema operativo compatible)
+Si solo deseas navegar por los datos públicos de billeteras, puedes hacerlo directamente; cuando necesites marcar favoritos, etiquetar o crear copy trading, deberás iniciar sesión.
 
-## Empezar
+### 2. Conectar tu billetera
 
-<Steps>
-  <Step title="Instalar">
-    Describe cómo instalar tu producto o registrarse.
+Tras conectar tu billetera, podrás ver tu cuenta, posiciones, historial de operaciones y los datos relacionados con copy trading.
 
-    ```bash
-    npm install your-package
-    ```
-  </Step>
-  <Step title="Configurar">
-    Describe cualquier configuración necesaria antes del primer uso.
+<Info>
+Conectar la billetera solo permite que SeaBond lea y muestre la información de tu cuenta; no significa que ya hayas iniciado un copy trading.
+</Info>
 
-    ```bash
-    your-cli init
-    ```
-  </Step>
-  <Step title="Ejecutar">
-    Muestra lo primero que hace el usuario para verlo funcionar.
+### 3. Entrar a smart money
 
-    ```bash
-    your-cli start
-    ```
-  </Step>
-</Steps>
+Smart money es el punto de entrada para encontrar billeteras de trading. La primera vez, te conviene empezar revisando el desempeño, el drawdown, el número de operaciones y el tamaño de la cuenta.
 
-<Tip>
-  Ofrece a las personas una forma de obtener ayuda. Puede ser un enlace a una página de soporte, un chat con un agente de atención al cliente o un foro de tu producto.
+Puedes considerar estas condiciones:
 
-  Ejemplo: ¿Necesitas ayuda? Contáctanos en [support@yourcompany.com](mailto:support@yourcompany.com).
-</Tip>
+- Si el tamaño de la cuenta es demasiado pequeño
+- Si las ganancias provienen solo de una o dos operaciones grandes
+- Si el número de operaciones es muy bajo
+- Si el drawdown es excesivo
+- Si el apalancamiento es claramente alto
+- Si el desempeño reciente y el de largo plazo son coherentes
+
+### 4. Abrir el detalle de la billetera
+
+Tras filtrar algunas billeteras candidatas, entra a la página de detalle. Lo que debes ver no es "cuánto ha ganado esta billetera", sino "cómo lo ganó".
+
+Aspectos clave:
+
+- Si actualmente tiene una posición grande
+- Si suele usar apalancamiento alto
+- Si las ganancias son estables
+- Si tiende a promediar a la baja cuando pierde
+- Si tiene disciplina al cerrar posiciones
+- Si la estrategia reciente ya cambió
+
+### 5. Agregar a favoritos y etiquetar
+
+Si una billetera te parece interesante, agrégala a favoritos y ponle etiquetas. Por ejemplo:
+
+- En observación
+- Swing en majors
+- Apalancamiento alto
+- Drawdown elevado
+- Posible candidato a copy trading
+- Excluida
+
+Así no tendrás que volver a analizarla la próxima vez.
+
+### 6. Crear el copy trading
+
+Tras confirmar la billetera objetivo, el modo y el monto a invertir, ya puedes crear el copy trading.
+
+Antes de crear, te recomendamos confirmar:
+
+- ¿Cuánto capital pienso destinar al copy trading?
+- Si hay pérdidas seguidas, ¿en qué momento me detengo?
+- ¿Quiero sincronizar las posiciones actuales que ya tiene la billetera?
+- Si promedia, ¿también lo puedo aceptar?
+- Cuando cierra, ¿cierro también?
+
+<Warning>
+El copy trading se ve afectado por la volatilidad del mercado, el slippage, la latencia y el comportamiento de la billetera objetivo. Antes de crearlo, confirma tu monto a invertir y el rango de drawdown que estás dispuesto a soportar.
+</Warning>
