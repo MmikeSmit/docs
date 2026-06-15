@@ -1,16 +1,16 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "SeaBond",
+  "name": "SeaBond Docs",
   "colors": {
-    "primary": "#0F766E",
-    "light": "#2DD4BF",
-    "dark": "#0F766E"
+    "primary": "#9950FF",
+    "light": "#9950FF",
+    "dark": "#9950FF"
   },
-  "favicon": "/logo/seabond.png",
+  "favicon": "/logo/seabond-mark.svg",
   "logo": {
-    "light": "/logo/seabond.png",
-    "dark": "/logo/seabond.png"
+    "light": "/logo/seabond-mark.svg",
+    "dark": "/logo/seabond-mark.svg"
   },
   "navigation": {
     "languages": [
