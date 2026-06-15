@@ -9,8 +9,8 @@
   },
   "favicon": "/logo/seabond-mark.svg",
   "logo": {
-    "light": "/logo/seabond-docs-logo.svg",
-    "dark": "/logo/seabond-docs-logo.svg"
+    "light": "/logo/seabond.png",
+    "dark": "/logo/seabond.png"
   },
   "navigation": {
     "languages": [
